@@ -1,0 +1,358 @@
+[2022-11-18 17:18:15,651]: Skip avahi_enable search...
+[2022-11-18 17:18:15,651]: SSL is not enabled...
+[2022-11-18 17:18:15,654]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 17:18:15,657]: New staff_thing!!! name = sensor0
+[2022-11-18 17:18:15,658]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 17:18:15,658]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 17:18:15,659]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:15,660]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 17:18:15,662]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 17:18:15,663]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:15,664]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:15,666]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:15,668]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:15,671]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:15,674]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:15,678]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:18:15,694]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:18:15,696]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:18:15,697]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 17:18:15,699]: New staff_thing!!! name = sensor1
+[2022-11-18 17:18:15,700]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:18:15,700]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 17:18:15,702]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor1
+[2022-11-18 17:18:15,704]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:15,704]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 17:18:15,704]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor1
+[2022-11-18 17:18:15,706]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:15,706]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 17:18:15,707]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor1
+[2022-11-18 17:18:15,707]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 17:18:15,708]: [_send_staff_RESULT_REGISTER] Register sensor1 complete!!!
+[2022-11-18 17:18:15,708]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 17:18:15,708]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 17:18:15,708]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 17:18:15,709]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 17:18:15,710]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 17:18:15,710]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:15,712]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:15,714]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:15,715]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:15,719]: [TM_REGISTER         ] topic : TM/REGISTER/sensor1 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:18:15,781]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor1 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:18:15,782]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:18:15,782]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor1/+/#
+[2022-11-18 17:18:15,783]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor1
+[2022-11-18 17:18:15,783]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor1/+/#
+[2022-11-18 17:18:15,784]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor1
+[2022-11-18 17:18:15,785]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 17:18:15,785]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor1/+/#
+[2022-11-18 17:18:15,785]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor1
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor1/+/#
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor1
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor1/+/#
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor1
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor1/+/#
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor1
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor1/+/#
+[2022-11-18 17:18:15,786]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor1
+[2022-11-18 17:18:16,660]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:16,663]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:16,665]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:16,666]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:16,669]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:16,671]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:16,672]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:16,703]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:16,705]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:16,707]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:16,708]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:16,710]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:16,712]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:16,714]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:17,660]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:17,663]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:17,665]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:17,667]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:17,669]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:17,671]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:17,673]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:17,704]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:17,705]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:17,707]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:17,709]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:17,711]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:17,713]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:17,716]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:18,658]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:18:18,661]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 17:18:18,663]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:18,665]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:18,667]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:18,670]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:18,672]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:18,674]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:18,676]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:18,705]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:18,708]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:18,710]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:18,712]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:18,716]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:18,718]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:18,721]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:19,662]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:19,666]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:19,669]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:19,671]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:19,674]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:19,675]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:19,677]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:19,704]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:19,707]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:19,709]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:19,711]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:19,713]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:19,715]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:19,717]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:20,662]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:20,665]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:20,667]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:20,669]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:20,671]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:20,673]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:20,675]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:20,705]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:20,707]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:20,709]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:20,710]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:20,713]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:20,715]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:20,718]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:21,660]: New staff_thing!!! name = sensor2
+[2022-11-18 17:18:21,660]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:18:21,662]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor2
+[2022-11-18 17:18:21,663]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor2
+[2022-11-18 17:18:21,664]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 17:18:21,664]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor2
+[2022-11-18 17:18:21,666]: [_send_staff_RESULT_REGISTER] Register sensor2 complete!!!
+[2022-11-18 17:18:21,668]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:21,670]: [print_packet] Unexpected topic!!! : sensor2/temperature 
+[2022-11-18 17:18:21,671]: [print_packet] Unexpected topic!!! : sensor2/humidity 
+[2022-11-18 17:18:21,673]: [print_packet] Unexpected topic!!! : sensor2/pressure 
+[2022-11-18 17:18:21,675]: [print_packet] Unexpected topic!!! : sensor2/ax 
+[2022-11-18 17:18:21,677]: [print_packet] Unexpected topic!!! : sensor2/ay 
+[2022-11-18 17:18:21,679]: [print_packet] Unexpected topic!!! : sensor2/az 
+[2022-11-18 17:18:21,681]: [print_packet] Unexpected topic!!! : sensor2/moved 
+[2022-11-18 17:18:21,684]: [TM_REGISTER         ] topic : TM/REGISTER/sensor2 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:18:21,687]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:21,688]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:21,690]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:21,693]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:21,695]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:21,697]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:21,707]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:21,708]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:21,709]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor2 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:18:21,710]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:18:21,710]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:21,710]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor2/+/#
+[2022-11-18 17:18:21,710]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor2
+[2022-11-18 17:18:21,710]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor2/+/#
+[2022-11-18 17:18:21,714]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor2
+[2022-11-18 17:18:21,715]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:21,716]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor2/+/#
+[2022-11-18 17:18:21,717]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor2
+[2022-11-18 17:18:21,717]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor2/+/#
+[2022-11-18 17:18:21,718]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:21,718]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor2
+[2022-11-18 17:18:21,719]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor2/+/#
+[2022-11-18 17:18:21,719]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor2
+[2022-11-18 17:18:21,719]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor2/+/#
+[2022-11-18 17:18:21,720]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:21,720]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor2
+[2022-11-18 17:18:21,721]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor2/+/#
+[2022-11-18 17:18:21,721]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:21,722]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor2
+[2022-11-18 17:18:21,723]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 17:18:22,663]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:22,665]: [print_packet] Unexpected topic!!! : sensor2/temperature 
+[2022-11-18 17:18:22,667]: [print_packet] Unexpected topic!!! : sensor2/humidity 
+[2022-11-18 17:18:22,668]: [print_packet] Unexpected topic!!! : sensor2/pressure 
+[2022-11-18 17:18:22,671]: [print_packet] Unexpected topic!!! : sensor2/ax 
+[2022-11-18 17:18:22,673]: [print_packet] Unexpected topic!!! : sensor2/ay 
+[2022-11-18 17:18:22,675]: [print_packet] Unexpected topic!!! : sensor2/az 
+[2022-11-18 17:18:22,677]: [print_packet] Unexpected topic!!! : sensor2/moved 
+[2022-11-18 17:18:22,679]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:22,682]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:22,685]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:22,687]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:22,689]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:22,692]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:22,706]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:22,708]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:22,712]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:22,714]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:22,715]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:22,717]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:22,719]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:23,664]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:23,668]: [print_packet] Unexpected topic!!! : sensor2/temperature 
+[2022-11-18 17:18:23,671]: [print_packet] Unexpected topic!!! : sensor2/humidity 
+[2022-11-18 17:18:23,673]: [print_packet] Unexpected topic!!! : sensor2/pressure 
+[2022-11-18 17:18:23,675]: [print_packet] Unexpected topic!!! : sensor2/ax 
+[2022-11-18 17:18:23,677]: [print_packet] Unexpected topic!!! : sensor2/ay 
+[2022-11-18 17:18:23,679]: [print_packet] Unexpected topic!!! : sensor2/az 
+[2022-11-18 17:18:23,681]: [print_packet] Unexpected topic!!! : sensor2/moved 
+[2022-11-18 17:18:23,682]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:23,685]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:23,687]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:23,688]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:23,690]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:23,694]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:23,708]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:23,711]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:23,713]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:23,715]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:23,717]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:23,718]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:23,720]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:24,659]: New staff_thing!!! name = sensor3
+[2022-11-18 17:18:24,660]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor3
+[2022-11-18 17:18:24,662]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:18:24,663]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor3
+[2022-11-18 17:18:24,664]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor3
+[2022-11-18 17:18:24,664]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 17:18:24,665]: [_send_staff_RESULT_REGISTER] Register sensor3 complete!!!
+[2022-11-18 17:18:24,668]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 17:18:24,670]: [print_packet] Unexpected topic!!! : sensor3/temperature 
+[2022-11-18 17:18:24,672]: [print_packet] Unexpected topic!!! : sensor3/humidity 
+[2022-11-18 17:18:24,673]: [print_packet] Unexpected topic!!! : sensor3/pressure 
+[2022-11-18 17:18:24,676]: [print_packet] Unexpected topic!!! : sensor3/ax 
+[2022-11-18 17:18:24,678]: [print_packet] Unexpected topic!!! : sensor3/ay 
+[2022-11-18 17:18:24,681]: [print_packet] Unexpected topic!!! : sensor3/az 
+[2022-11-18 17:18:24,684]: [print_packet] Unexpected topic!!! : sensor3/moved 
+[2022-11-18 17:18:24,685]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:24,687]: [print_packet] Unexpected topic!!! : sensor2/temperature 
+[2022-11-18 17:18:24,691]: [TM_REGISTER         ] topic : TM/REGISTER/sensor3 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:18:24,694]: [print_packet] Unexpected topic!!! : sensor2/humidity 
+[2022-11-18 17:18:24,696]: [print_packet] Unexpected topic!!! : sensor2/pressure 
+[2022-11-18 17:18:24,697]: [print_packet] Unexpected topic!!! : sensor2/ax 
+[2022-11-18 17:18:24,699]: [print_packet] Unexpected topic!!! : sensor2/ay 
+[2022-11-18 17:18:24,700]: [print_packet] Unexpected topic!!! : sensor2/az 
+[2022-11-18 17:18:24,702]: [print_packet] Unexpected topic!!! : sensor2/moved 
+[2022-11-18 17:18:24,704]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:24,706]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:24,709]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:24,712]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:24,713]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:24,714]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:24,716]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:24,717]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:24,719]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:24,722]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:24,722]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor3 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:18:24,722]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:18:24,722]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor3/+/#
+[2022-11-18 17:18:24,724]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor3
+[2022-11-18 17:18:24,724]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:24,724]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor3/+/#
+[2022-11-18 17:18:24,726]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor3
+[2022-11-18 17:18:24,726]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor3/+/#
+[2022-11-18 17:18:24,726]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor3
+[2022-11-18 17:18:24,727]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor3/+/#
+[2022-11-18 17:18:24,727]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:24,727]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor3
+[2022-11-18 17:18:24,728]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor3/+/#
+[2022-11-18 17:18:24,728]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor3
+[2022-11-18 17:18:24,729]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor3/+/#
+[2022-11-18 17:18:24,729]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor3
+[2022-11-18 17:18:24,729]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor3/+/#
+[2022-11-18 17:18:24,729]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:24,729]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor3
+[2022-11-18 17:18:24,731]: [TM_ALIVE            ] topic : TM/ALIVE/sensor3 payload : {}
+[2022-11-18 17:18:25,661]: [print_packet] Unexpected topic!!! : sensor3/temperature 
+[2022-11-18 17:18:25,663]: [print_packet] Unexpected topic!!! : sensor3/humidity 
+[2022-11-18 17:18:25,665]: [print_packet] Unexpected topic!!! : sensor3/pressure 
+[2022-11-18 17:18:25,667]: [print_packet] Unexpected topic!!! : sensor3/ax 
+[2022-11-18 17:18:25,669]: [print_packet] Unexpected topic!!! : sensor3/ay 
+[2022-11-18 17:18:25,671]: [print_packet] Unexpected topic!!! : sensor3/az 
+[2022-11-18 17:18:25,673]: [print_packet] Unexpected topic!!! : sensor3/moved 
+[2022-11-18 17:18:25,675]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:18:25,677]: [print_packet] Unexpected topic!!! : sensor2/temperature 
+[2022-11-18 17:18:25,679]: [print_packet] Unexpected topic!!! : sensor2/humidity 
+[2022-11-18 17:18:25,681]: [print_packet] Unexpected topic!!! : sensor2/pressure 
+[2022-11-18 17:18:25,683]: [print_packet] Unexpected topic!!! : sensor2/ax 
+[2022-11-18 17:18:25,685]: [print_packet] Unexpected topic!!! : sensor2/ay 
+[2022-11-18 17:18:25,687]: [print_packet] Unexpected topic!!! : sensor2/az 
+[2022-11-18 17:18:25,691]: [print_packet] Unexpected topic!!! : sensor2/moved 
+[2022-11-18 17:18:25,693]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:18:25,695]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:18:25,696]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:18:25,698]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:18:25,700]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:18:25,701]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:18:25,707]: [print_packet] Unexpected topic!!! : sensor1/temperature 
+[2022-11-18 17:18:25,712]: [print_packet] Unexpected topic!!! : sensor1/humidity 
+[2022-11-18 17:18:25,714]: [print_packet] Unexpected topic!!! : sensor1/pressure 
+[2022-11-18 17:18:25,717]: [print_packet] Unexpected topic!!! : sensor1/ax 
+[2022-11-18 17:18:25,719]: [print_packet] Unexpected topic!!! : sensor1/ay 
+[2022-11-18 17:18:25,722]: [print_packet] Unexpected topic!!! : sensor1/az 
+[2022-11-18 17:18:25,724]: [print_packet] Unexpected topic!!! : sensor1/moved 
+[2022-11-18 17:18:26,166]: Ctrl + C Exit

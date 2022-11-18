@@ -1,0 +1,191 @@
+[2022-11-18 17:27:41,725]: Skip avahi_enable search...
+[2022-11-18 17:27:41,725]: SSL is not enabled...
+[2022-11-18 17:27:41,728]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 17:27:41,730]: New staff_thing!!! name = sensor0
+[2022-11-18 17:27:41,731]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 17:27:41,732]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 17:27:41,732]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 17:27:41,733]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 17:27:41,735]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:27:41,755]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:27:41,756]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:27:41,756]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 17:27:41,756]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 17:27:41,757]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 17:27:41,758]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 17:27:41,758]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 17:27:41,759]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 17:27:41,759]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 17:27:41,760]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 17:27:41,761]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 17:27:41,761]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 17:27:41,763]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 17:27:41,763]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 17:27:41,764]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 17:27:41,765]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 17:27:44,733]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:27:47,737]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:27:50,739]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:27:53,741]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:27:56,745]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:27:59,746]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:28:02,749]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:28:02,750]: New staff_thing!!! name = sensor1
+[2022-11-18 17:28:02,751]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor1
+[2022-11-18 17:28:02,752]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:28:02,753]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor1
+[2022-11-18 17:28:02,753]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor1
+[2022-11-18 17:28:02,755]: [TM_REGISTER         ] topic : TM/REGISTER/sensor1 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:28:02,756]: [_send_staff_RESULT_REGISTER] Register sensor1 complete!!!
+[2022-11-18 17:28:02,757]: New staff_thing!!! name = sensor2
+[2022-11-18 17:28:02,758]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor2
+[2022-11-18 17:28:02,759]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor2
+[2022-11-18 17:28:02,759]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor2
+[2022-11-18 17:28:02,761]: [_send_staff_RESULT_REGISTER] Register sensor2 complete!!!
+[2022-11-18 17:28:02,763]: New staff_thing!!! name = sensor3
+[2022-11-18 17:28:02,763]: [TM_REGISTER         ] topic : TM/REGISTER/sensor2 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:28:02,764]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor3
+[2022-11-18 17:28:02,765]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor3
+[2022-11-18 17:28:02,765]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor3
+[2022-11-18 17:28:02,769]: [_send_staff_RESULT_REGISTER] Register sensor3 complete!!!
+[2022-11-18 17:28:02,769]: [TM_REGISTER         ] topic : TM/REGISTER/sensor3 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:28:02,772]: New staff_thing!!! name = sensor4
+[2022-11-18 17:28:02,773]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor4
+[2022-11-18 17:28:02,774]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor4
+[2022-11-18 17:28:02,775]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor4
+[2022-11-18 17:28:02,779]: [_send_staff_RESULT_REGISTER] Register sensor4 complete!!!
+[2022-11-18 17:28:02,779]: [TM_REGISTER         ] topic : TM/REGISTER/sensor4 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:28:02,829]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor1 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:28:02,830]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:28:02,830]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor1/+/#
+[2022-11-18 17:28:02,831]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor1
+[2022-11-18 17:28:02,831]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor1/+/#
+[2022-11-18 17:28:02,832]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor1
+[2022-11-18 17:28:02,832]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor1/+/#
+[2022-11-18 17:28:02,833]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor1
+[2022-11-18 17:28:02,834]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor1/+/#
+[2022-11-18 17:28:02,835]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor1
+[2022-11-18 17:28:02,835]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor1/+/#
+[2022-11-18 17:28:02,835]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor1
+[2022-11-18 17:28:02,836]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor1/+/#
+[2022-11-18 17:28:02,836]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor1
+[2022-11-18 17:28:02,836]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor1/+/#
+[2022-11-18 17:28:02,837]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor1
+[2022-11-18 17:28:02,881]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor2 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:28:02,883]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:28:02,884]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor2/+/#
+[2022-11-18 17:28:02,886]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor2
+[2022-11-18 17:28:02,886]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor2/+/#
+[2022-11-18 17:28:02,886]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor2
+[2022-11-18 17:28:02,887]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor2/+/#
+[2022-11-18 17:28:02,887]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor2
+[2022-11-18 17:28:02,887]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor2/+/#
+[2022-11-18 17:28:02,887]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor2
+[2022-11-18 17:28:02,888]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor2/+/#
+[2022-11-18 17:28:02,888]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor2
+[2022-11-18 17:28:02,888]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor2/+/#
+[2022-11-18 17:28:02,888]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor2
+[2022-11-18 17:28:02,888]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor2/+/#
+[2022-11-18 17:28:02,889]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor2
+[2022-11-18 17:28:02,929]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor3 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:28:02,930]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor4 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:28:02,931]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:28:02,931]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor3/+/#
+[2022-11-18 17:28:02,931]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor3
+[2022-11-18 17:28:02,932]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor3/+/#
+[2022-11-18 17:28:02,932]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor3
+[2022-11-18 17:28:02,932]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor3/+/#
+[2022-11-18 17:28:02,932]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor3
+[2022-11-18 17:28:02,932]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor3/+/#
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor3
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor3/+/#
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor3
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor3/+/#
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor3
+[2022-11-18 17:28:02,933]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor3/+/#
+[2022-11-18 17:28:02,934]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor3
+[2022-11-18 17:28:02,935]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:28:02,935]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor4/+/#
+[2022-11-18 17:28:02,935]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor4
+[2022-11-18 17:28:02,935]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor4/+/#
+[2022-11-18 17:28:02,936]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor4
+[2022-11-18 17:28:02,936]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor4/+/#
+[2022-11-18 17:28:02,936]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor4
+[2022-11-18 17:28:02,936]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor4/+/#
+[2022-11-18 17:28:02,936]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor4
+[2022-11-18 17:28:02,937]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor4/+/#
+[2022-11-18 17:28:02,938]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor4
+[2022-11-18 17:28:02,939]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor4/+/#
+[2022-11-18 17:28:02,939]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor4
+[2022-11-18 17:28:02,939]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor4/+/#
+[2022-11-18 17:28:02,939]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor4
+[2022-11-18 17:28:05,753]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:28:08,755]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:28:11,757]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:28:14,760]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:28:16,160]: Ctrl + C Exit
