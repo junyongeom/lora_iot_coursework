@@ -12,11 +12,10 @@ class LoRaStaffThing(SoPStaffThing):
         super().__init__(name, service_list, alive_cycle,
                          is_super, is_parallel, device_id)
         self._idx = idx
+             
+    def moved(self) -> int:
         
-        
-    def moved(self) -> bool:
-        
-        return False
+        return 0
 
     def current_temperature(self) -> float:
         # now = datetime.datetime.now()
@@ -37,9 +36,3 @@ class LoRaStaffThing(SoPStaffThing):
 
     def current_az(self) -> int:
         return 1
-
-    def set_idx(self, idx):
-        self._idx = idx
-    
-    def get_idx(self):
-        return self._idx
