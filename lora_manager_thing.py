@@ -21,12 +21,14 @@ class LoRaManagerThing(SoPManagerThing):
         self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)        
 
     def setup(self, avahi_enable=True):
-        print('set up ...')
+        print('warming up ...')
         self.my_thread = threading.Thread(
             target=read_thread, args=(self.my_serial, ))
         self.my_thread.start()
         time.sleep(5)
-        print('set up done..')
+        self.connection_validation = threading.Thread(target=alive_check)
+        self.connection_validation.start()
+        print('done..')
         return super().setup(avahi_enable=avahi_enable)
 
     def _handle_staff_message(self, msg: str):

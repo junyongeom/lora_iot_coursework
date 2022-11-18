@@ -68,7 +68,7 @@ def read_thread(my_serial):
         while not rx_buf.endswith('OnRxDone'):
             rx_buf += my_serial.read().decode()
         parse_data(rx_buf)
-        alive_check()
+        
 
 def parse_data(buf):
     global sensor_data_table, newly_discovered_node, node_table
@@ -96,11 +96,13 @@ def alive_check():
     if there are no messages for 15 seconds from a node
     we consider it as there is no connection between the node and gateway
     """
-    global node_table
-    for node in node_table:
-        curr = time.time()
-        if curr - node_life[node] > 15:
-            node_table.remove(node)
+    while True:        
+        global node_table
+        time.sleep(3)
+        for node in node_table:
+            curr = time.time()
+            if curr - node_life[node] > 15:
+                node_table.remove(node)
 
 class LoRaStaffThingInfo(SoPStaffThingInfo):
     def __init__(self, device_id: str, idx: int) -> None:

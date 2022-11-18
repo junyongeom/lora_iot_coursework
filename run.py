@@ -23,7 +23,7 @@ def arg_parse():
     parser.add_argument("--baud_rate", '-br', action='store', type=int,
                         required=False, default=115200, help="baud rate")  
     parser.add_argument("--scan_cycle", '-sc', action='store', type=int,
-                        required=False, default=30, help="scan_cycle")
+                        required=False, default=10, help="scan_cycle")
     parser.add_argument("--mode", '-md', action='store', type=str,
                         required=False, default=SoPManagerMode.JOIN.value, help="scan_cycle")
                       
@@ -43,4 +43,5 @@ if __name__ == '__main__':
     args = arg_parse()
     thing = generate_thing(args)
     thing.setup(avahi_enable=args.auto_scan)
+    print('set up complete')
     thing.run()
