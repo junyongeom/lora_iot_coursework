@@ -73,7 +73,7 @@ def read_thread(my_serial):
 def parse_data(buf):
     global sensor_data_table, newly_discovered_node, node_table
     # print("tabletable", node_table)
-    print('sensor_table', sensor_data_table)
+    # print('sensor_table', sensor_data_table)
 
     words = buf.split()
     node_id = words[0][2:]
