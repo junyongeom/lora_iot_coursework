@@ -1,0 +1,96 @@
+[2022-11-18 18:01:29,059]: Skip avahi_enable search...
+[2022-11-18 18:01:29,060]: SSL is not enabled...
+[2022-11-18 18:01:29,063]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 18:01:29,066]: New staff_thing!!! name = sensor0
+[2022-11-18 18:01:29,067]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 18:01:29,068]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.9
+}
+[2022-11-18 18:01:29,069]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 18:01:29,069]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 18:01:29,071]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 18:01:29,071]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 77.4
+}
+[2022-11-18 18:01:29,073]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1018.7
+}
+[2022-11-18 18:01:29,075]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-11-18 18:01:29,078]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -82
+}
+[2022-11-18 18:01:29,079]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-11-18 18:01:29,081]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 18:01:29,086]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 18:01:29,112]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 18:01:29,113]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 18:01:29,115]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 18:01:29,116]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 18:01:29,116]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 18:01:29,118]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 18:01:29,119]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 18:01:29,119]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 18:01:29,120]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 18:01:29,120]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 18:01:29,120]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 18:01:29,120]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 18:01:29,121]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 18:01:29,121]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 18:01:29,121]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 18:01:29,121]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 18:01:29,121]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 18:01:30,069]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.9
+}
+[2022-11-18 18:01:30,070]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.9
+}
+[2022-11-18 18:01:30,071]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 77.4
+}
+[2022-11-18 18:01:30,074]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 170, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 253, in _handle_mqtt_message
+    self._handle_MT_EXECUTE(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 380, in _handle_MT_EXECUTE
+    execute_msg = SoPExecuteMessage(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/common/mqtt_message.py", line 159, in __init__
+    self._scenario: str = self._payload['scenario']
+KeyError: 'scenario'
+
+Error: 'scenario'
+[2022-11-18 18:01:30,075]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 77.4
+}
+[2022-11-18 18:01:55,360]: Ctrl + C Exit

@@ -1,6 +1,6 @@
 from big_thing_py.manager_thing import *
-from lora_utils import *
 from lora_manager_thing import *
+from lora_utils import *
 
 import serial # pyserial
 

@@ -12,7 +12,7 @@ class LoRaManagerThing(SoPManagerThing):
 
     def __init__(self, name: str, service_list: List[SoPService], alive_cycle: float, is_super: bool = False, is_parallel: bool = True,
                  ip: str = None, port: int = None, ssl_ca_path: str = None, ssl_enable: bool = None, log_name: str = None, log_enable: bool = True, log_mode: SoPPrintMode = SoPPrintMode.ABBR, append_mac_address: bool = True,
-                 mode: SoPManagerMode = SoPManagerMode.SPLIT, network_type: SoPNetworkType = SoPNetworkType.MQTT, scan_cycle=3,
+                 mode: SoPManagerMode = SoPManagerMode.SPLIT, network_type: SoPNetworkType = SoPNetworkType.MQTT, scan_cycle=30,
                  serial_port: str = '/dev/ttyACM0', baud_rate: int = 115200):
         super().__init__(name, service_list, alive_cycle, is_super, is_parallel,
                          ip, port, ssl_ca_path, ssl_enable, log_name, log_enable, log_mode, append_mac_address,
@@ -37,6 +37,7 @@ class LoRaManagerThing(SoPManagerThing):
         if len(newly_discovered_node) != 0:
             protocol_type = [SoPProtocolType.Base.TM_REGISTER, SoPProtocolType.Base.TM_ALIVE]
         else:
+            time.sleep(0.5)
             protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
         
 
@@ -155,43 +156,43 @@ class LoRaManagerThing(SoPManagerThing):
                                                        func=lora_child_thing.current_temperature,
                                                        type=SoPType.DOUBLE,  
                                                        bound=(-100, 100),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='humidity',
                                                        func=lora_child_thing.current_humidity,
                                                        type=SoPType.DOUBLE,
                                                        bound=(-100, 100),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='pressure',
                                                        func=lora_child_thing.current_pressure,
                                                        type=SoPType.INTEGER ,
                                                        bound=(-10000, 10000),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='ax',
                                                        func=lora_child_thing.current_ax,
                                                        type=SoPType.INTEGER ,  
                                                        bound=(-10000, 10000),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='ay',
                                                        func=lora_child_thing.current_ay,
                                                        type=SoPType.INTEGER,
                                                        bound=(-10000, 10000),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='az',
                                                        func=lora_child_thing.current_az,
                                                        type=SoPType.INTEGER,
                                                        bound=(-10000, 10000),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               SoPValue(name='moved',
                                                        func=lora_child_thing.moved,
                                                        type=SoPType.INTEGER,
                                                        bound=(-2, 2),
-                                                       cycle=1,
+                                                       cycle=3,
                                                        tag_list=tag_list),
                                               ]
 
