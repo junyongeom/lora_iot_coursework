@@ -1,11 +1,13 @@
 from big_thing_py.manager_thing import *
 from lora_staff_thing import *
 from lora_utils import *
-import serial 
-
 
 class LoRaManagerThing(SoPManagerThing):
-
+    """
+    It's a lora gateway which connected with the server.
+    It receives sensor data from sensor node and report it
+    to the server using serial communication.
+    """
     def __init__(self, name: str, service_list: List[SoPService], alive_cycle: float, is_super: bool = False, is_parallel: bool = True,
                  ip: str = None, port: int = None, ssl_ca_path: str = None, ssl_enable: bool = None, log_name: str = None, log_enable: bool = True, log_mode: SoPPrintMode = SoPPrintMode.ABBR, append_mac_address: bool = True,
                  mode: SoPManagerMode = SoPManagerMode.SPLIT, network_type: SoPNetworkType = SoPNetworkType.MQTT, scan_cycle=3,
@@ -13,14 +15,17 @@ class LoRaManagerThing(SoPManagerThing):
         super().__init__(name, service_list, alive_cycle, is_super, is_parallel,
                          ip, port, ssl_ca_path, ssl_enable, log_name, log_enable, log_mode, append_mac_address,
                          mode, network_type, scan_cycle)
-        self._child_thing_list: List[LoRaStaffThing] = []
-        
+        self._staff_thing_list: List[LoRaStaffThing] = []
         self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None) 
+        self.id_map = {} # mapping idx and lora_id
         
+                      
     def setup(self, avahi_enable=True):
-        self.load_config()
-
+        self.my_thread = threading.Thread(target=read_thread, args=(self.my_serial, ))
+        self.my_thread.start()
+        print('set up done')
         return super().setup(avahi_enable=avahi_enable)
+             
 
     def _handle_staff_message(self, msg: str):
         protocol_type = None
@@ -82,9 +87,9 @@ class LoRaManagerThing(SoPManagerThing):
         pass
 
     def _receive_staff_packet(self):
+        global kimchi
         cur_time = time.time()
-
-        # for discover hue staff thing
+        # for discover lora staff thing
         if cur_time - self._last_scan_time > self._scan_cycle:
             print('get staff things list...')
 
@@ -124,21 +129,7 @@ class LoRaManagerThing(SoPManagerThing):
     def _publish_staff_packet(self, msg):
         pass
 
-    def load_config(self):
-        conf_file = json_file_read(self._conf_file_path)
-
-        # TODO: Thig code have some issue when conf file was not exist.... Fix it
-        if conf_file:
-            room_select = conf_file['select']
-            hue_room_info = conf_file['room_list']
-            for room in hue_room_info:
-                if room_select == room['room_name']:
-                    self._bridge_ip = room['bridge_ip'].strip('/')
-                    self._bridge_port = int(room['bridge_port'])
-                    self._user_key = room['user_key']
-        elif self._bridge_ip == '' or self._bridge_ip == None:
-            SOPLOG_DEBUG('bridge ip is empty. exit program...', 'red')
-            raise Exception('HueConfigFileNotExist')
+    
 
     def verify_hue_request_result(self, result_list: list):
         if type(result_list) == list and 'error' in result_list[0]:
@@ -188,7 +179,31 @@ class LoRaManagerThing(SoPManagerThing):
 
         staff_function_list: List[SoPService] = [on_function, off_function,
                                                  set_brightness_function, set_color_function]
-        staff_value_list: List[SoPService] = []
+        staff_value_list: List[SoPService] = [SoPValue(name='unix_time',
+                                                        func=current_unix_time,
+                                                        type=SoPType.DOUBLE,
+                                                        bound=(0, 1999999999),
+                                                        cycle=1,
+                                                        tag_list=tag_list),
+                                                SoPValue(name='datetime',
+                                                        func=current_datetime,
+                                                        type=SoPType.STRING,
+                                                        bound=(0, 20),
+                                                        cycle=1,
+                                                        tag_list=tag_list),
+                                                SoPValue(name='time',
+                                                        func=current_time,
+                                                        type=SoPType.STRING,
+                                                        bound=(0, 20),
+                                                        cycle=1,
+                                                        tag_list=tag_list),
+                                                SoPValue(name='year',
+                                                        func=current_year,
+                                                        type=SoPType.INTEGER,
+                                                        bound=(0, 9999),
+                                                        cycle=1,
+                                                        tag_list=tag_list),
+                                                ]
 
         service_list: List[SoPService] = staff_function_list + staff_value_list
 

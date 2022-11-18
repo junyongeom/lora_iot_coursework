@@ -3,7 +3,6 @@ from lora_staff_thing import *
 
 import argparse
 
-
 def arg_parse():
     parser = argparse.ArgumentParser()
     parser.add_argument("--name", '-n', action='store', type=str,
@@ -34,11 +33,9 @@ def arg_parse():
 
 def generate_thing(args):
     client = LoRaManagerThing(name=args.name, ip=args.host, port=args.port, ssl_ca_path=None, ssl_enable=False,
-                                bridge_ip=args.bridge_host, bridge_port=args.bridge_port, alive_cycle=args.alive_cycle, service_list=[],
-                                user_key=args.user_key, mode=args.mode, serial_port = args.serial_port, baud_rate = args.baud_rate,
-                                scan_cycle=args.scan_cycle, conf_file_path=args.config)
-    client.setup(avahi_enable=False)
-    client.run()
+                                alive_cycle=args.alive_cycle, service_list=[], scan_cycle=args.scan_cycle,
+                                mode=args.mode, serial_port = args.serial_port, baud_rate = args.baud_rate,)                                
+    return client
 
 
 if __name__ == '__main__':

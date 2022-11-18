@@ -1,3 +1,4 @@
 pyserial
 # serial port access setting
 # ex) sudo chmod a+rw /dev/ttyACM0  
+#
