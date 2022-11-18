@@ -1,0 +1,54 @@
+[2022-11-18 16:51:09,170]: Skip avahi_enable search...
+[2022-11-18 16:51:09,171]: SSL is not enabled...
+[2022-11-18 16:51:09,173]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 16:51:09,177]: New staff_thing!!! name = sensor0
+[2022-11-18 16:51:09,178]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 16:51:09,179]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 16:51:09,179]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 16:51:09,180]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 16:51:09,180]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 16:51:09,182]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 16:51:09,183]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 16:51:09,185]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 16:51:09,187]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 16:51:09,189]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 16:51:09,191]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 16:51:09,194]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 16:51:09,241]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 16:51:09,242]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 16:51:09,243]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 16:51:09,243]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 16:51:09,244]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 228, in receive_staff_message_thread_func
+    self._handle_staff_message(msg)
+  File "/home/jyeom/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 41, in _handle_staff_message
+    if SoPProtocolType.Base.TM_REGISTER in protocol_type:
+TypeError: argument of type 'NoneType' is not iterable
+
+Error: argument of type 'NoneType' is not iterable
+[2022-11-18 16:51:09,244]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 16:51:09,244]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 16:51:09,245]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 16:51:09,245]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 16:51:09,246]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 16:51:09,247]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 16:51:09,248]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 16:58:42,312]: Ctrl + C Exit

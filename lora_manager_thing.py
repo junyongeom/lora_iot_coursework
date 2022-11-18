@@ -18,25 +18,27 @@ class LoRaManagerThing(SoPManagerThing):
                          ip, port, ssl_ca_path, ssl_enable, log_name, log_enable, log_mode, append_mac_address,
                          mode, network_type, scan_cycle)
         self._staff_thing_list: List[LoRaStaffThing] = []
-        self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)
-        self.id_map = {}  # mapping virtual thing and lora_id
+        self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)        
 
     def setup(self, avahi_enable=True):
         print('set up ...')
         self.my_thread = threading.Thread(
             target=read_thread, args=(self.my_serial, ))
         self.my_thread.start()
+        time.sleep(5)
+        print('set up done..')
         return super().setup(avahi_enable=avahi_enable)
 
     def _handle_staff_message(self, msg: str):
+        global newly_discovered_node
         protocol_type = None
         lora_device_list: Dict = msg
 
-        for idx, lora_device in lora_device_list.items():
-            if 'state' in lora_device:
-                protocol_type = [
-                    SoPProtocolType.Base.TM_REGISTER, SoPProtocolType.Base.TM_ALIVE]
-                break
+        if len(newly_discovered_node) != 0:
+            protocol_type = [SoPProtocolType.Base.TM_REGISTER, SoPProtocolType.Base.TM_ALIVE]
+        else:
+            protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
+        
 
         if SoPProtocolType.Base.TM_REGISTER in protocol_type:
             self._handle_staff_REGISTER(msg)
@@ -57,12 +59,17 @@ class LoRaManagerThing(SoPManagerThing):
             self._publish_staff_packet(msg)
 
     def _handle_staff_REGISTER(self, msg):
-        lora_device_list = msg
+        # lora_device_list = msg
+        # for idx, staff_info in lora_device_list.items():
+        #     staff_thing_info = LoRaStaffThingInfo(device_id=staff_info['uniqueid'], idx=idx,)
 
-        for idx, staff_info in lora_device_list.items():
-            staff_thing_info = LoRaStaffThingInfo(device_id=staff_info['uniqueid'], idx=idx,)
-
+        #     self._staff_register_queue.put(staff_thing_info)
+        global newly_discovered_node, node_idx
+        for node in newly_discovered_node:            
+            staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)            
             self._staff_register_queue.put(staff_thing_info)
+            node_idx += 1
+            newly_discovered_node.remove(node)
 
     def _handle_staff_ALIVE(self, msg):
         lora_device_list = msg
@@ -88,14 +95,15 @@ class LoRaManagerThing(SoPManagerThing):
 
     def _receive_staff_packet(self):
         cur_time = time.time()
+        global node_table
+        lora_device_list = node_table
         # for discover lora staff thing
         if cur_time - self._last_scan_time > self._scan_cycle:
             print('get staff things list...')
-            lora_device_list = self.id_map.keys()
             for staff_thing in self._staff_thing_list:
                 self._send_TM_ALIVE(staff_thing.get_name())
                 staff_thing.set_last_alive_time(cur_time)
-            if self.verify_lora_request_result(lora_device_list):
+            if self.verify_lora_request_result(node_table):
                 self._last_scan_time = cur_time
                 return lora_device_list
             else:
@@ -104,7 +112,6 @@ class LoRaManagerThing(SoPManagerThing):
             for staff_thing in self._staff_thing_list:
                 # for check lora staff thing alive
                 if staff_thing.get_registered() and cur_time - staff_thing.get_last_alive_time() > staff_thing.get_alive_cycle():
-                    lora_device_list = self.id_map.keys()
                     if self.verify_lora_request_result(lora_device_list):
                         self._send_TM_ALIVE(staff_thing.get_name())
                         staff_thing.set_last_alive_time(cur_time)
@@ -116,8 +123,8 @@ class LoRaManagerThing(SoPManagerThing):
                     for value in staff_thing.get_value_list():
                         if cur_time - value.get_last_update_time() > value.get_cycle():
                             # update() method update _last_update_time of SoPValue
-                            value.update()
-                            self._send_TM_VALUE_PUBLISH(
+                            value.update()  # TM_VALUE_PUBLISH thing name, value name, payload 
+                            self._send_TM_VALUE_PUBLISH( staff_thing.get_name(),
                                 value.get_name(), value.dump_pub())
 
         return None
@@ -126,11 +133,12 @@ class LoRaManagerThing(SoPManagerThing):
         pass
 
     def verify_lora_request_result(self, result_list: list):
-        if type(result_list) == list and 'error' in result_list[0]:
-            print_error(result_list[0]['error']['description'])
-            return False
-        else:
-            return True
+        return True
+        # if type(result_list) == list and 'error' in result_list[0]:
+        #     print_error(result_list[0]['error']['description'])
+        #     return False
+        # else:
+        #     return True
 
     def _create_staff(self, staff_thing_info: LoRaStaffThingInfo) -> LoRaStaffThing:
         
@@ -138,43 +146,50 @@ class LoRaManagerThing(SoPManagerThing):
         uniqueid = staff_thing_info.device_id
 
         lora_child_thing = LoRaStaffThing(
-            name='sensor'+str(idx), service_list=[], alive_cycle=10, idx=idx, header=self._header, device_id=uniqueid)
+            name='sensor'+str(idx), service_list=[], alive_cycle=10, idx=idx, device_id=uniqueid)
 
+        # staff_value_list: List[SoPService] = []
         staff_function_list: List[SoPService] = []
         tag_list = [SoPTag(name='lora_sensor')]
         staff_value_list: List[SoPService] = [SoPValue(name='temperature',
                                                        func=lora_child_thing.current_temperature,
-                                                       type=SoPType.FLOAT,
+                                                       type=SoPType.DOUBLE,  
+                                                       bound=(-100, 100),
+                                                       cycle=1,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='humidity',
+                                                       func=lora_child_thing.current_humidity,
+                                                       type=SoPType.DOUBLE,
                                                        bound=(-100, 100),
                                                        cycle=1,
                                                        tag_list=tag_list),
                                               SoPValue(name='pressure',
                                                        func=lora_child_thing.current_pressure,
-                                                       type=SoPType.FLOAT,
+                                                       type=SoPType.INTEGER ,
                                                        bound=(-10000, 10000),
                                                        cycle=1,
                                                        tag_list=tag_list),
                                               SoPValue(name='ax',
                                                        func=lora_child_thing.current_ax,
-                                                       type=SoPType.INT,
+                                                       type=SoPType.INTEGER ,  
                                                        bound=(-10000, 10000),
                                                        cycle=1,
                                                        tag_list=tag_list),
                                               SoPValue(name='ay',
                                                        func=lora_child_thing.current_ay,
-                                                       type=SoPType.INT,
+                                                       type=SoPType.INTEGER,
                                                        bound=(-10000, 10000),
                                                        cycle=1,
                                                        tag_list=tag_list),
                                               SoPValue(name='az',
                                                        func=lora_child_thing.current_az,
-                                                       type=SoPType.INT,
+                                                       type=SoPType.INTEGER,
                                                        bound=(-10000, 10000),
                                                        cycle=1,
                                                        tag_list=tag_list),
                                               SoPValue(name='moved',
                                                        func=lora_child_thing.moved,
-                                                       type=SoPType.INT,
+                                                       type=SoPType.INTEGER,
                                                        bound=(-2, 2),
                                                        cycle=1,
                                                        tag_list=tag_list),

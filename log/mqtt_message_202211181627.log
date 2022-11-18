@@ -1,0 +1,42 @@
+[2022-11-18 16:27:06,573]: Skip avahi_enable search...
+[2022-11-18 16:27:06,574]: SSL is not enabled...
+[2022-11-18 16:27:06,576]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 16:27:06,579]: New staff_thing!!! name = sensor0
+[2022-11-18 16:27:06,580]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 16:27:06,581]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 16:27:06,582]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 16:27:06,583]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 208, in scan_staff_message
+    msg = self._receive_staff_packet()
+  File "/home/jyeom/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 125, in _receive_staff_packet
+    value.get_name(), value.dump_pub(), 3 )
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 359, in _send_TM_VALUE_PUBLISH
+    thing_name, value_name, payload).mqtt_message())
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/common/mqtt_message.py", line 255, in __init__
+    self._type = SoPType.get(payload['type'])
+TypeError: 'int' object is not subscriptable
+
+Error: 'int' object is not subscriptable
+[2022-11-18 16:27:06,583]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 16:27:52,927]: Ctrl + C Exit
+[2022-11-18 16:28:02,038]: Skip avahi_enable search...
+[2022-11-18 16:28:02,039]: SSL is not enabled...
+[2022-11-18 16:28:02,041]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 16:28:02,044]: New staff_thing!!! name = sensor0
+[2022-11-18 16:28:02,045]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 16:28:02,046]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 16:28:02,047]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 16:28:02,048]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 16:28:02,049]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 208, in scan_staff_message
+    msg = self._receive_staff_packet()
+  File "/home/jyeom/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 125, in _receive_staff_packet
+    value.get_name(), value.dump_pub(), {'ax':3} )
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 359, in _send_TM_VALUE_PUBLISH
+    thing_name, value_name, payload).mqtt_message())
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/common/mqtt_message.py", line 255, in __init__
+    self._type = SoPType.get(payload['type'])
+KeyError: 'type'
+
+Error: 'type'
+[2022-11-18 16:28:09,933]: Ctrl + C Exit

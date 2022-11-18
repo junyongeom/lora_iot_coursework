@@ -1,0 +1,47 @@
+[2022-11-18 17:04:17,423]: Skip avahi_enable search...
+[2022-11-18 17:04:17,424]: SSL is not enabled...
+[2022-11-18 17:04:17,426]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 17:04:17,429]: New staff_thing!!! name = sensor0
+[2022-11-18 17:04:17,430]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 17:04:17,431]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:04:17,431]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 17:04:17,432]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 17:04:17,434]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 17:04:17,435]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:04:17,437]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:04:17,438]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:04:17,440]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:04:17,441]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:04:17,443]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:04:17,446]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:04:17,454]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:04:17,456]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:04:17,457]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 17:04:17,457]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 17:04:17,457]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 17:04:17,458]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 17:04:17,459]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 17:04:17,459]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:04:17,460]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 17:04:17,460]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 17:04:17,461]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 17:04:17,462]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 17:04:17,464]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 17:04:17,465]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 17:04:17,466]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 17:04:17,466]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 17:04:17,466]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 17:04:17,903]: Ctrl + C Exit

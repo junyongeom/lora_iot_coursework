@@ -13,8 +13,7 @@ class LoRaStaffThing(SoPStaffThing):
                          is_super, is_parallel, device_id)
         self._idx = idx
              
-    def moved(self) -> int:
-        
+    def moved(self) -> int:        
         return 0
 
     def current_temperature(self) -> float:

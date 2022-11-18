@@ -3,25 +3,25 @@ import threading
 import serial
 import time
 
-idx_cnt = 0
-idx_id_map = {}
+node_idx = 0
+newly_discovered_node = []
+node_table = []
 sensor_data = dict.fromkeys(['moved', 'temperature', 'pressure',
                              'humidity', 'ax', 'ay', 'az'])
-sensor_data_dict = {}
+sensor_data_table = {}
+node_life = {}
 
-def get_temperature(idx):
+def get_temperature(node_id):
     global sensor_data_dict
-    if idx not in idx_id_map.keys():
-        time.sleep(3)
-    my_id = idx_id_map[idx]
-    return sensor_data_dict[my_id]['temperature']
+    if node_id not in node_table:
+        time.sleep(3)    
+    return sensor_data_dict[node_id]['temperature']
 
-def get_humidity(idx):
+def get_humidity(node_id):
     global sensor_data_dict
-    if idx not in idx_id_map.keys():
+    if node_id not in node_table:
         time.sleep(3)
-    my_id = idx_id_map[idx]
-    return sensor_data_dict[my_id]['humidity'] 
+    return sensor_data_dict[node_id]['humidity'] 
 
 def read_thread(my_serial):
     """
@@ -31,22 +31,21 @@ def read_thread(my_serial):
     time.sleep(0.1)
     my_serial.reset_input_buffer()
     my_serial.reset_output_buffer()
-
     while True:
         rx_buf = ''
         while not rx_buf.endswith('OnRxDone'):
             rx_buf += my_serial.read().decode()
         parse_data(rx_buf)
-
+        alive_check()
 
 def parse_data(buf):
-    global sensor_data_dict
-    global idx_cnt
+    global sensor_data_table, newly_discovered_node
+
     words = buf.split()
-    node_id = int(words[0][2:])
-    if node_id not in idx_id_map.values():
-        idx_id_map[idx_cnt] = node_id
-        idx_cnt += 1
+    node_id = words[0][2:]
+    if node_id not in node_table:
+        node_table.append(node_id)
+        newly_discovered_node.append(node_id)
     sensor_data['moved'] = int(words[2][1])
     sensor_data['temperature'] = float(words[3][1:]) / 100
     sensor_data['pressure'] = float(words[4][1:]) / 10
@@ -54,10 +53,21 @@ def parse_data(buf):
     sensor_data['ax'] = int(words[6][2:])
     sensor_data['ay'] = int(words[7][2:])
     sensor_data['az'] = int(words[8][2:])
-    sensor_data_dict[node_id] = sensor_data
+    sensor_data_table[node_id] = sensor_data
+    node_life[node_id] = time.time() 
     # print(sensor_data_dict)
+
+def alive_check():
+    """
+    if there are no messages for 15 seconds from a node
+    we consider it as there is no connection between the node and gateway
+    """
+    for node in node_table:
+        curr = time.time()
+        if curr - node_life[node] < 15:
+            node_table.remove(node)
 
 class LoRaStaffThingInfo(SoPStaffThingInfo):
     def __init__(self, device_id: str, idx: int) -> None:
-        super().__init__(device_id)
-        self.idx = idx        
+        super().__init__(device_id)       
+        self.idx = idx

@@ -1,0 +1,24 @@
+[2022-11-18 16:17:03,545]: Skip avahi_enable search...
+[2022-11-18 16:17:03,545]: SSL is not enabled...
+[2022-11-18 16:17:03,548]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 16:17:03,551]: Some error
+[2022-11-18 16:17:03,552]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 157, in run
+    raise Exception('_g_exit was set!!!')
+Exception: _g_exit was set!!!
+
+Error: _g_exit was set!!!
+[2022-11-18 16:17:03,552]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 263, in register_thread_func
+    register_info)
+  File "/home/jyeom/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 146, in _create_staff
+    name='sensor'+str(idx), service_list=[], alive_cycle=10, idx=idx, header=self._header, device_id=uniqueid)
+AttributeError: 'LoRaManagerThing' object has no attribute '_header'
+
+Error: 'LoRaManagerThing' object has no attribute '_header'
+[2022-11-18 16:17:05,553]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 183, in wrapup
+    thread.exit()
+AttributeError: 'SoPThread' object has no attribute 'exit'
+
+Error: 'SoPThread' object has no attribute 'exit'
