@@ -69,7 +69,8 @@ class LoRaManagerThing(SoPManagerThing):
             staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)            
             self._staff_register_queue.put(staff_thing_info)
             node_idx += 1
-            newly_discovered_node.remove(node)
+            newly_discovered_node.remove(str(node))
+
 
     def _handle_staff_ALIVE(self, msg):
         lora_device_list = msg

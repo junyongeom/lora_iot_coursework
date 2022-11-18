@@ -1,0 +1,347 @@
+[2022-11-18 17:37:22,118]: Skip avahi_enable search...
+[2022-11-18 17:37:22,119]: SSL is not enabled...
+[2022-11-18 17:37:22,122]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 17:37:22,125]: New staff_thing!!! name = sensor0
+[2022-11-18 17:37:22,125]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 17:37:22,126]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 17:37:22,127]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 17:37:22,128]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:22,129]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 17:37:22,130]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:22,132]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:22,134]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:22,136]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:22,138]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:22,139]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:22,144]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": -1,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-11-18 17:37:22,205]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 17:37:22,206]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 17:37:22,206]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0/+/#
+[2022-11-18 17:37:22,206]: [-> SUBSCRIBE         ] MT/EXECUTE/__temperature/sensor0
+[2022-11-18 17:37:22,207]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:22,207]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0/+/#
+[2022-11-18 17:37:22,208]: [-> SUBSCRIBE         ] MT/EXECUTE/__humidity/sensor0
+[2022-11-18 17:37:22,208]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0/+/#
+[2022-11-18 17:37:22,208]: [-> SUBSCRIBE         ] MT/EXECUTE/__pressure/sensor0
+[2022-11-18 17:37:22,209]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0/+/#
+[2022-11-18 17:37:22,209]: [-> SUBSCRIBE         ] MT/EXECUTE/__ax/sensor0
+[2022-11-18 17:37:22,210]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0/+/#
+[2022-11-18 17:37:22,210]: [-> SUBSCRIBE         ] MT/EXECUTE/__ay/sensor0
+[2022-11-18 17:37:22,211]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0/+/#
+[2022-11-18 17:37:22,211]: [-> SUBSCRIBE         ] MT/EXECUTE/__az/sensor0
+[2022-11-18 17:37:22,211]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0/+/#
+[2022-11-18 17:37:22,211]: [-> SUBSCRIBE         ] MT/EXECUTE/__moved/sensor0
+[2022-11-18 17:37:23,129]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:23,131]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:23,133]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:23,135]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:23,137]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:23,139]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:23,141]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:24,127]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:24,130]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:24,132]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:24,134]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:24,135]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:24,138]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:24,140]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:25,126]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:25,130]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:25,132]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:25,134]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:25,136]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:25,138]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:25,140]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:25,142]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:26,129]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:26,133]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:26,136]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:26,138]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:26,140]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:26,142]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:26,144]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:27,130]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:27,134]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:27,135]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:27,137]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:27,140]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:27,142]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:27,144]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:28,126]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:28,130]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:28,135]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:28,137]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:28,139]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:28,142]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:28,144]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:28,146]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:29,131]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:29,134]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:29,136]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:29,138]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:29,140]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:29,142]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:29,144]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:30,132]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:30,134]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:30,136]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:30,138]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:30,140]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:30,142]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:30,144]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:31,125]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:31,133]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:31,135]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:31,137]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:31,139]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:31,142]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:31,144]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:31,146]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:32,132]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:32,135]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:32,137]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:32,139]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:32,141]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:32,143]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:32,145]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:33,133]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:33,137]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:33,139]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:33,141]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:33,142]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:33,144]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:33,146]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:34,127]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:34,134]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:34,136]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:34,139]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:34,141]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:34,143]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:34,145]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:34,147]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:35,136]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:35,138]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:35,141]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:35,143]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:35,145]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:35,147]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:35,149]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:36,136]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:36,140]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:36,142]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:36,144]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:36,145]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:36,149]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:36,151]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:37,127]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:37,136]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:37,140]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:37,143]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:37,145]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:37,148]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:37,149]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:37,151]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:38,136]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:38,140]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:38,142]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:38,144]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:38,147]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:38,149]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:38,150]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:39,137]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:39,140]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:39,142]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:39,144]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:39,146]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:39,149]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:39,151]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:40,127]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:40,138]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:40,141]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:40,144]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:40,145]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:40,149]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:40,152]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:40,154]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:41,139]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:41,142]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:41,143]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:41,145]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:41,147]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:41,149]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:41,151]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:42,141]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:42,143]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:42,145]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:42,147]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:42,149]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:42,150]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:42,153]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:43,128]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:43,141]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:43,143]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:43,146]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:43,149]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:43,152]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:43,155]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:43,158]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:44,141]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:44,144]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:44,146]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:44,148]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:44,149]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:44,151]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:44,153]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:45,142]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:45,146]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:45,149]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:45,150]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:45,152]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:45,154]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:45,156]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:46,128]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:46,142]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:46,145]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:46,149]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:46,150]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:46,152]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:46,155]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:46,159]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:47,142]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:47,146]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:47,149]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:47,151]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:47,153]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:47,155]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:47,157]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:48,143]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:48,147]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:48,149]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:48,151]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:48,153]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:48,155]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:48,157]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:49,129]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:49,144]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:49,148]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:49,151]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:49,153]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:49,155]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:49,157]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:49,159]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:50,144]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:50,148]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:50,150]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:50,152]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:50,155]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:50,157]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:50,159]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:51,145]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:51,149]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:51,152]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:51,154]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:51,155]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:51,157]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:51,159]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:52,130]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:52,145]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:52,150]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:52,152]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:52,154]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:52,156]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:52,157]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:52,159]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:53,146]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:53,149]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:53,153]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:53,155]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:53,157]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:53,159]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:53,161]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:54,147]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:54,150]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:54,153]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:54,156]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:54,157]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:54,159]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:54,160]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:55,131]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:55,147]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:55,151]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:55,154]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:55,156]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:55,158]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:55,159]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:55,161]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:56,148]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:56,151]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:56,154]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:56,156]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:56,158]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:56,162]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:56,164]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:57,149]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:57,153]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:57,155]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:57,156]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:57,158]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:57,160]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:57,162]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:58,131]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:37:58,150]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:58,154]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:58,158]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:58,160]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:58,161]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:58,163]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:58,165]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:37:59,151]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:37:59,153]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:37:59,156]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:37:59,159]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:37:59,161]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:37:59,163]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:37:59,164]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:38:00,151]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:38:00,154]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:38:00,156]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:38:00,161]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:38:00,163]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:38:00,165]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:38:00,167]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:38:01,131]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 17:38:01,151]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:38:01,155]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:38:01,158]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:38:01,162]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:38:01,163]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:38:01,165]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:38:01,167]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:38:02,153]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:38:02,155]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:38:02,157]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:38:02,162]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:38:02,164]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:38:02,165]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:38:02,168]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:38:03,154]: [print_packet] Unexpected topic!!! : sensor0/temperature 
+[2022-11-18 17:38:03,155]: [print_packet] Unexpected topic!!! : sensor0/humidity 
+[2022-11-18 17:38:03,157]: [print_packet] Unexpected topic!!! : sensor0/pressure 
+[2022-11-18 17:38:03,162]: [print_packet] Unexpected topic!!! : sensor0/ax 
+[2022-11-18 17:38:03,164]: [print_packet] Unexpected topic!!! : sensor0/ay 
+[2022-11-18 17:38:03,166]: [print_packet] Unexpected topic!!! : sensor0/az 
+[2022-11-18 17:38:03,168]: [print_packet] Unexpected topic!!! : sensor0/moved 
+[2022-11-18 17:38:03,871]: Ctrl + C Exit
