@@ -39,7 +39,7 @@ class LoRaManagerThing(SoPManagerThing):
         if len(newly_discovered_node) != 0:
             protocol_type = [SoPProtocolType.Base.TM_REGISTER, SoPProtocolType.Base.TM_ALIVE]
         else:
-            time.sleep(0.5)
+            # time.sleep(0.5)
             protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
         
 
@@ -71,6 +71,7 @@ class LoRaManagerThing(SoPManagerThing):
 
 
     def _handle_staff_ALIVE(self, msg):
+        # print('alivealive',msg)
         lora_device_list = msg
         pass
 
@@ -99,6 +100,7 @@ class LoRaManagerThing(SoPManagerThing):
         # for discover lora staff thing
         if cur_time - self._last_scan_time > self._scan_cycle:
             print('get staff things list...')
+            print('yyyyyyyyyyyyyyyyy',self._staff_thing_list)
             for staff_thing in self._staff_thing_list:
                 self._send_TM_ALIVE(staff_thing.get_name())
                 staff_thing.set_last_alive_time(cur_time)

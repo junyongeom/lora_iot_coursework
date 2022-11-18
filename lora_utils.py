@@ -67,7 +67,8 @@ def read_thread(my_serial):
         rx_buf = ''
         while not rx_buf.endswith('OnRxDone'):
             rx_buf += my_serial.read().decode()
-        parse_data(rx_buf)
+        if not 'error' in rx_buf:           
+            parse_data(rx_buf)
         
 
 def parse_data(buf):
@@ -99,6 +100,7 @@ def alive_check():
     while True:        
         global node_table
         time.sleep(3)
+        print('ttttttttttt', node_table)
         for node in node_table:
             curr = time.time()
             if curr - node_life[node] > 15:
