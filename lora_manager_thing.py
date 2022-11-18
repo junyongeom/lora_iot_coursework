@@ -60,11 +60,6 @@ class LoRaManagerThing(SoPManagerThing):
             self._publish_staff_packet(msg)
 
     def _handle_staff_REGISTER(self, msg):
-        # lora_device_list = msg
-        # for idx, staff_info in lora_device_list.items():
-        #     staff_thing_info = LoRaStaffThingInfo(device_id=staff_info['uniqueid'], idx=idx,)
-
-        #     self._staff_register_queue.put(staff_thing_info)
         global newly_discovered_node, node_idx
         for node in newly_discovered_node:            
             staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)            

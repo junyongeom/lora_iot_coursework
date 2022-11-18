@@ -25,7 +25,7 @@ def arg_parse():
     parser.add_argument("--scan_cycle", '-sc', action='store', type=int,
                         required=False, default=30, help="scan_cycle")
     parser.add_argument("--mode", '-md', action='store', type=str,
-                        required=False, default=SoPManagerMode.SPLIT.value, help="scan_cycle")
+                        required=False, default=SoPManagerMode.JOIN.value, help="scan_cycle")
                       
     arg_list, unknown = parser.parse_known_args()
 
