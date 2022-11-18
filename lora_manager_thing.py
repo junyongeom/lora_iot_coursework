@@ -125,8 +125,8 @@ class LoRaManagerThing(SoPManagerThing):
                         if cur_time - value.get_last_update_time() > value.get_cycle():
                             # update() method update _last_update_time of SoPValue
                             value.update()  # TM_VALUE_PUBLISH thing name, value name, payload 
-                            self._send_TM_VALUE_PUBLISH( staff_thing.get_name(),
-                                value.get_name(), value.dump_pub())
+                            self._send_TM_VALUE_PUBLISH( 
+                                "MT/EXECUTE/__"+value.get_name(), staff_thing.get_name(), value.dump_pub())
 
         return None
 
