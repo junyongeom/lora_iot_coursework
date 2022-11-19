@@ -119,9 +119,6 @@ int main(void)
   uint8_t batteryLevel;
   sensor_t sensor_data;
 	int32_t accel_scalar = 1083; // 
-	float accel_temp = 0; //
-	uint16_t accel_diff = 0; //
-	uint16_t diff_count = 0;
 	uint16_t accel_except_num = 0;
 	uint16_t sequence_num = 0;
 	//uint16_t lora_ID = rand() % 999; // its actually pseudo random
