@@ -1,4 +1,6 @@
 pyserial
 # serial port access setting
 # ex) sudo chmod a+rw /dev/ttyACM0  
-#
+# Micro control unit board: STM32L072 of Murata Corp.
+# LoRa transceiver: SX1276 of Semtech Corp.
+# Sensor board: X-Nucleo-IKS01A2 of STMicroelectronics Corp.

@@ -100,7 +100,7 @@ def alive_check():
     while True:        
         global node_table
         time.sleep(3)
-        print('ttttttttttt', node_table)
+        # print('ttttttttttt', node_table)
         for node in node_table:
             curr = time.time()
             if curr - node_life[node] > 15:

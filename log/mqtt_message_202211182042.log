@@ -1,0 +1,1566 @@
+[2022-11-18 20:42:40,307]: Skip avahi_enable search...
+[2022-11-18 20:42:40,308]: SSL is not enabled...
+[2022-11-18 20:42:40,310]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 20:42:40,311]: Register try 1
+[2022-11-18 20:42:40,311]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 20:42:40,312]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 20:42:40,314]: New staff_thing!!! name = sensor0
+[2022-11-18 20:42:40,314]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 20:42:40,315]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-11-18 20:42:40,315]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-11-18 20:42:40,316]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-11-18 20:42:40,316]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-11-18 20:42:40,317]: [_send_staff_RESULT_REGISTER] Register sensor0 complete!!!
+[2022-11-18 20:42:40,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:42:40,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:40,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:42:40,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:42:40,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:42:40,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-11-18 20:42:40,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:40,336]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 20:42:40,337]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 20:42:40,339]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:42:43,317]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:42:43,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:43,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1018.9
+}
+[2022-11-18 20:42:43,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:42:43,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:42:43,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1044
+}
+[2022-11-18 20:42:43,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:46,318]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:42:46,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:46,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.5
+}
+[2022-11-18 20:42:46,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:42:46,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:42:46,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-11-18 20:42:46,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:49,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:42:49,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:49,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.5
+}
+[2022-11-18 20:42:49,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:42:49,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:42:49,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-11-18 20:42:49,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:50,314]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:42:52,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:42:52,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:52,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:42:52,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:42:52,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:42:52,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:42:52,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:55,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:42:55,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:55,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.4
+}
+[2022-11-18 20:42:55,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:42:55,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:42:55,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-11-18 20:42:55,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:42:58,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:42:58,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:42:58,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.5
+}
+[2022-11-18 20:42:58,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:42:58,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -49
+}
+[2022-11-18 20:42:58,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:42:58,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:00,314]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:01,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:01,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:01,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.5
+}
+[2022-11-18 20:43:01,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:01,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -49
+}
+[2022-11-18 20:43:01,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:01,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:04,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:04,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 1020.0
+}
+[2022-11-18 20:43:04,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 226.0
+}
+[2022-11-18 20:43:04,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": 66
+}
+[2022-11-18 20:43:04,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:04,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:04,336]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:07,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:07,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:07,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.7
+}
+[2022-11-18 20:43:07,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:07,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:07,336]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-11-18 20:43:07,338]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:10,314]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:10,315]: New staff_thing!!! name = sensor1
+[2022-11-18 20:43:10,315]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor1
+[2022-11-18 20:43:10,317]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor1
+[2022-11-18 20:43:10,317]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor1
+[2022-11-18 20:43:10,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:10,320]: [_send_staff_RESULT_REGISTER] Register sensor1 complete!!!
+[2022-11-18 20:43:10,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:10,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:10,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:10,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:10,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:10,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:10,334]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:10,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:10,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:10,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:10,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:10,345]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:10,347]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:13,318]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:13,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:13,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:13,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:13,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -42
+}
+[2022-11-18 20:43:13,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1099
+}
+[2022-11-18 20:43:13,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:13,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:13,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:13,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:13,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:13,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -42
+}
+[2022-11-18 20:43:13,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1099
+}
+[2022-11-18 20:43:13,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:16,317]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:16,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:16,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1020.0
+}
+[2022-11-18 20:43:16,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:16,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -47
+}
+[2022-11-18 20:43:16,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1044
+}
+[2022-11-18 20:43:16,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:16,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:16,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:16,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1020.0
+}
+[2022-11-18 20:43:16,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:16,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -47
+}
+[2022-11-18 20:43:16,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1044
+}
+[2022-11-18 20:43:16,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:19,318]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:19,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:19,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:19,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:19,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:19,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:19,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:19,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:19,334]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:19,336]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:19,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:19,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:19,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:19,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:20,315]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:20,317]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:43:25,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:25,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:25,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 1019.2
+}
+[2022-11-18 20:43:25,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 226.0
+}
+[2022-11-18 20:43:25,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:25,334]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:25,336]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:25,338]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:25,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 1019.2
+}
+[2022-11-18 20:43:25,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 226.0
+}
+[2022-11-18 20:43:25,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:25,347]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:25,349]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:25,351]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:28,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:28,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:28,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 1019.2
+}
+[2022-11-18 20:43:28,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 226.0
+}
+[2022-11-18 20:43:28,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:28,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:28,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:28,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:28,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 1019.2
+}
+[2022-11-18 20:43:28,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 226.0
+}
+[2022-11-18 20:43:28,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:28,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:28,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:28,347]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:30,315]: New staff_thing!!! name = sensor2
+[2022-11-18 20:43:30,316]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:30,316]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor2
+[2022-11-18 20:43:30,317]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor2
+[2022-11-18 20:43:30,318]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:43:30,319]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor2
+[2022-11-18 20:43:30,319]: [_send_staff_RESULT_REGISTER] Register sensor2 complete!!!
+[2022-11-18 20:43:30,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:30,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 1019.1
+}
+[2022-11-18 20:43:30,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 225.0
+}
+[2022-11-18 20:43:30,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:30,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:30,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": -42
+}
+[2022-11-18 20:43:30,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:31,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:31,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 0.0
+}
+[2022-11-18 20:43:31,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 1019.1
+}
+[2022-11-18 20:43:31,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 225.0
+}
+[2022-11-18 20:43:31,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:31,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:31,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": -42
+}
+[2022-11-18 20:43:31,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:31,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 1019.1
+}
+[2022-11-18 20:43:31,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 225.0
+}
+[2022-11-18 20:43:31,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": 67
+}
+[2022-11-18 20:43:31,345]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:31,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": -42
+}
+[2022-11-18 20:43:31,348]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 2
+}
+[2022-11-18 20:43:33,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:33,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.8
+}
+[2022-11-18 20:43:33,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.2
+}
+[2022-11-18 20:43:33,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:33,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:33,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:33,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:34,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:34,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:34,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.8
+}
+[2022-11-18 20:43:34,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.2
+}
+[2022-11-18 20:43:34,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:34,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:34,338]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:34,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:34,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.8
+}
+[2022-11-18 20:43:34,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.2
+}
+[2022-11-18 20:43:34,345]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:34,347]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:34,349]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:34,350]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:36,319]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:36,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.8
+}
+[2022-11-18 20:43:36,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.2
+}
+[2022-11-18 20:43:36,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:36,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:36,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1043
+}
+[2022-11-18 20:43:36,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:37,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:37,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:37,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:37,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:37,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:37,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:37,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:37,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:37,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:37,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:37,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:37,348]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:37,350]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:37,352]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:39,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.6
+}
+[2022-11-18 20:43:39,323]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:39,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:39,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:39,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -43
+}
+[2022-11-18 20:43:39,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:39,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:40,316]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:40,318]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:43:40,320]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:43:40,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:40,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:40,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:40,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.4
+}
+[2022-11-18 20:43:40,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:40,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -47
+}
+[2022-11-18 20:43:40,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1042
+}
+[2022-11-18 20:43:40,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:40,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:40,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.4
+}
+[2022-11-18 20:43:40,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:40,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -47
+}
+[2022-11-18 20:43:40,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1042
+}
+[2022-11-18 20:43:40,348]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:40,351]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:43:42,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:42,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:42,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.4
+}
+[2022-11-18 20:43:42,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:42,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -47
+}
+[2022-11-18 20:43:42,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1042
+}
+[2022-11-18 20:43:42,331]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:43,324]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:43,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:43,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:43,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:43,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:43,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -45
+}
+[2022-11-18 20:43:43,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:43,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:43,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:43,345]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:43,348]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:43,350]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -45
+}
+[2022-11-18 20:43:43,351]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:43,353]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:45,320]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:45,322]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:45,325]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.6
+}
+[2022-11-18 20:43:45,327]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-11-18 20:43:45,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -45
+}
+[2022-11-18 20:43:45,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-11-18 20:43:45,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:46,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:46,328]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:46,330]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:46,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.0
+}
+[2022-11-18 20:43:46,333]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:46,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:46,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1044
+}
+[2022-11-18 20:43:46,339]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:46,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:46,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.0
+}
+[2022-11-18 20:43:46,345]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-11-18 20:43:46,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -48
+}
+[2022-11-18 20:43:46,348]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1044
+}
+[2022-11-18 20:43:46,350]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:51,321]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:51,323]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:43:51,333]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:43:51,335]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:43:51,337]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:51,338]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:43:51,340]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:43:51,342]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:43:51,344]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:43:51,347]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:43:51,349]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:43:54,326]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:43:57,329]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:44:00,332]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:44:03,335]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:44:06,338]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:44:09,341]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:44:12,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:44:15,343]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:44:18,346]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:44:21,349]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:44:24,350]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:44:27,351]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:44:30,354]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:44:30,357]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:44:30,358]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:44:30,360]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:44:33,357]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:44:36,361]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:44:39,361]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:44:40,341]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:44:42,364]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:44:45,365]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:44:48,369]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:44:51,369]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:44:54,370]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:44:57,374]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:45:00,373]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:45:03,377]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:45:06,380]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:45:09,381]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:45:12,382]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:45:15,383]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:45:18,385]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:45:21,387]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:45:24,390]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:45:27,393]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:45:30,393]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:45:30,395]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:45:30,397]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:45:30,399]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:45:33,398]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:45:36,397]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:45:39,399]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:45:40,341]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:45:42,401]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:45:45,403]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:45:48,407]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:45:51,410]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:45:54,410]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:45:57,413]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:46:00,417]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:46:03,420]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:46:06,421]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:46:09,424]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:46:12,426]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:46:15,426]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:46:18,430]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:46:21,430]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:46:24,433]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:46:27,434]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:46:30,435]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor2 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:46:30,437]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:46:30,439]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:46:30,441]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:46:33,439]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:46:36,442]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:46:39,445]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:46:40,343]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:46:42,448]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:46:45,449]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:46:48,450]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:46:51,450]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:46:54,453]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:46:57,455]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:47:00,458]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:47:03,461]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:47:06,465]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:47:09,465]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:47:12,468]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:47:15,471]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor2 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:47:18,473]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor2 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:47:21,474]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor2 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:47:24,478]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor2 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:47:27,480]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor2 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:47:30,485]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor2 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:47:30,487]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-11-18 20:47:30,489]: [TM_ALIVE            ] topic : TM/ALIVE/sensor1 payload : {}
+[2022-11-18 20:47:30,491]: [TM_ALIVE            ] topic : TM/ALIVE/sensor2 payload : {}
+[2022-11-18 20:47:33,490]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor0 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:47:36,493]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor0 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:47:39,493]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor0 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:47:40,343]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 20:47:42,495]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor0 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:47:45,497]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor0 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:47:48,498]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor0 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:47:51,501]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor0 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:47:54,501]: [MT_EXECUTE          ] topic : MT/EXECUTE/__temperature/sensor1 payload : {
+    "type": "double",
+    "value": 22.5
+}
+[2022-11-18 20:47:57,505]: [MT_EXECUTE          ] topic : MT/EXECUTE/__humidity/sensor1 payload : {
+    "type": "double",
+    "value": 76.7
+}
+[2022-11-18 20:48:00,506]: [MT_EXECUTE          ] topic : MT/EXECUTE/__pressure/sensor1 payload : {
+    "type": "int",
+    "value": 1019.3
+}
+[2022-11-18 20:48:03,505]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ax/sensor1 payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-11-18 20:48:06,509]: [MT_EXECUTE          ] topic : MT/EXECUTE/__ay/sensor1 payload : {
+    "type": "int",
+    "value": -54
+}
+[2022-11-18 20:48:09,509]: [MT_EXECUTE          ] topic : MT/EXECUTE/__az/sensor1 payload : {
+    "type": "int",
+    "value": 1104
+}
+[2022-11-18 20:48:12,511]: [MT_EXECUTE          ] topic : MT/EXECUTE/__moved/sensor1 payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-11-18 20:48:12,749]: Ctrl + C Exit

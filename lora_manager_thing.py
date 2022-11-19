@@ -100,7 +100,7 @@ class LoRaManagerThing(SoPManagerThing):
         # for discover lora staff thing
         if cur_time - self._last_scan_time > self._scan_cycle:
             print('get staff things list...')
-            print('yyyyyyyyyyyyyyyyy',self._staff_thing_list)
+            # print('yyyyyyyyyyyyyyyyy',self._staff_thing_list)
             for staff_thing in self._staff_thing_list:
                 self._send_TM_ALIVE(staff_thing.get_name())
                 staff_thing.set_last_alive_time(cur_time)

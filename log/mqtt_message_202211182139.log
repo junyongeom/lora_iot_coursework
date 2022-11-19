@@ -1,0 +1,21 @@
+[2022-11-18 21:39:22,825]: Skip avahi_enable search...
+[2022-11-18 21:39:22,825]: SSL is not enabled...
+[2022-11-18 21:39:22,827]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-11-18 21:39:22,828]: Register try 1
+[2022-11-18 21:39:22,829]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 21:39:22,829]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 21:39:22,830]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-11-18 21:39:22,831]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-11-18 21:39:22,835]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-11-18 21:39:22,837]: [DUP✔                 ] Thing lora_manager_thing_D8F3BC801CFB register success!
+[2022-11-18 21:39:22,839]: [TM_ALIVE            ] topic : TM/ALIVE/lora_manager_thing_D8F3BC801CFB payload : {}
+[2022-11-18 21:39:50,980]: Ctrl + C Exit
