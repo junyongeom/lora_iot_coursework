@@ -41,10 +41,6 @@ typedef enum
 #define BUFFER_SIZE                                 64 // Define the payload size here
 #define LED_PERIOD_MS               200
 
-#define DETECT_SENSITIVITY       55    // sensitivity of movement detect values
-#define DETECT_PERIOD            20    // period of detection
-#define MOVEMENT_STANDARD         3    // standard for judge movement
-
 #define LEDS_OFF   do{ \
                    LED_Off( LED_BLUE ) ;   \
                    LED_Off( LED_RED ) ;    \
