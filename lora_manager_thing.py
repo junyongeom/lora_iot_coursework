@@ -18,7 +18,8 @@ class LoRaManagerThing(SoPManagerThing):
                          ip, port, ssl_ca_path, ssl_enable, log_name, log_enable, log_mode, append_mac_address,
                          manager_mode, scan_cycle)
         self._staff_thing_list: List[LoRaStaffThing] = []
-        self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)        
+        self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)   
+        self.current_nodes = []     
 
     def setup(self, avahi_enable=True):
         print('warming up ...')
@@ -31,25 +32,31 @@ class LoRaManagerThing(SoPManagerThing):
         print('done..')
         return super().setup(avahi_enable=avahi_enable)
 
-    # def _handle_staff_message(self, msg: str):  ################### jy
-    #     global newly_discovered_node
-    #     protocol_type = None
-    #     lora_device_list: Dict = msg
-
-    #     if len(newly_discovered_node) != 0:
-    #         protocol_type = [SoPProtocolType.Base.TM_REGISTER, SoPProtocolType.Base.TM_ALIVE]
-    #     else:
-    #         # time.sleep(0.5)
-    #         protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
+    def _handle_staff_message(self, msg: str):  ################### jy
+        global newly_discovered_node
+        protocol_type = None
+        lora_device_list: Dict = msg
         
-    #     if SoPProtocolType.Base.TM_REGISTER in protocol_type:
-    #         self._handle_staff_REGISTER(msg)
-    #     elif SoPProtocolType.Base.TM_ALIVE in protocol_type:
-    #         self._handle_staff_ALIVE(msg)
-    #     elif SoPProtocolType.Base.TM_VALUE_PUBLISH in protocol_type or SoPProtocolType.Base.TM_VALUE_PUBLISH_OLD in protocol_type:
-    #         self._handle_staff_VALUE_PUBLISH(msg)
-    #     elif SoPProtocolType.Base.TM_RESULT_EXECUTE in protocol_type:
-    #         self._handle_staff_RESULT_EXECUTE(msg)
+        # if len(newly_discovered_node) != 0 and len(self.current_nodes) == 0:
+        if len(newly_discovered_node) != 0:
+            print('debugging9')
+            protocol_type = [SoPProtocolType.Base.TM_REGISTER]
+        else:
+            # time.sleep(0.5)
+            protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
+        
+        if SoPProtocolType.Base.TM_REGISTER in protocol_type:
+            # self._handle_staff_REGISTER(msg)
+            print('debugging7')
+            self._handle_REGISTER_staff_message(msg)
+        elif SoPProtocolType.Base.TM_ALIVE in protocol_type:
+            print('debugging10')
+            self._handle_staff_ALIVE(msg)
+        elif SoPProtocolType.Base.TM_VALUE_PUBLISH in protocol_type or SoPProtocolType.Base.TM_VALUE_PUBLISH_OLD in protocol_type:
+            # self._handle_staff_VALUE_PUBLISH(msg)
+            self._handle_VALUE_PUBLISH_staff_message(msg)
+        elif SoPProtocolType.Base.TM_RESULT_EXECUTE in protocol_type:
+            self._handle_staff_RESULT_EXECUTE(msg)
     
     # def _handle_staff_REGISTER(self, msg):  ### jy
     #     global newly_discovered_node, node_idx
@@ -100,11 +107,13 @@ class LoRaManagerThing(SoPManagerThing):
     # override
     def _connect_staff_thing(self, staff_thing: SoPStaffThing) -> bool:
         # api 방식에서는 api 요청 결과에 staff thing이 포함되어 있으면 연결.
-        print('debugging2')
-        staff_thing._receive_queue.put(dict(device_id=staff_thing.get_device_id(),
-                                            protocol=SoPProtocolType.Base.TM_REGISTER,
-                                            payload=staff_thing.dump()))
-        staff_thing._is_connected = True
+        print('debugging2', staff_thing.get_device_id())
+        if(staff_thing._is_connected != True):
+            staff_thing._receive_queue.put(dict(device_id=staff_thing.get_device_id(),
+                                                protocol=SoPProtocolType.Base.TM_REGISTER,
+                                                payload=staff_thing.dump()))
+            staff_thing._is_connected = True
+        # return True
 
     # override
     def _disconnect_staff_thing(self, staff_thing: SoPStaffThing) -> bool:
@@ -125,15 +134,28 @@ class LoRaManagerThing(SoPManagerThing):
         pass
 
     # override
-    def _handle_VALUE_PUBLISH_staff_message(self, staff_thing: SoPStaffThing, payload: str) -> Tuple[str, str, dict]:
-        pass
+    # def _handle_VALUE_PUBLISH_staff_message(self, staff_thing: SoPStaffThing, payload: str) -> Tuple[str, str, dict]:
+    #     pass
+    def _handle_VALUE_PUBLISH_staff_message(self,  payload: str) -> Tuple[str, str, dict]:
+        print('isitcalled')
+        for staff_thing in self._staff_thing_list:
+            for value in staff_thing.get_value_list():
+                value.update()
+                # self._send_TM_VALUE_PUBLISH("MT/EXECUTE/__"+value.get_name(), staff_thing.get_name(), value.dump_pub())
+                self._send_TM_VALUE_PUBLISH(staff_thing.get_name(),  value.get_name(), value.dump_pub())
+                # print('staffthinig', staff_thing.get_name())
+                # print('valueget', value.get_name())
+                # print('valuedubp', value.dump_pub())
+        # pass
 
     # override
     def _handle_RESULT_EXECUTE_staff_message(self, staff_thing: SoPStaffThing, payload: str) -> str:
+        # return 'success'
         pass
 
     # override
     def _send_RESULT_REGISTER_staff_message(self, staff_thing: SoPStaffThing, payload: dict) -> str:
+        return 'sc'
         pass
 
     # override
@@ -162,12 +184,16 @@ class LoRaManagerThing(SoPManagerThing):
     def _parse_staff_message(self, staff_msg) -> Tuple[SoPProtocolType, str, str]:
         print('staffmmm', staff_msg)
         # protocol = None
-        # if len(newly_discovered_node) != 0:
-        #      protocol = SoPProtocolType.Base.TM_REGISTER
+        # if len(newly_discovered_node) != 0 and len(self.current_nodes) !=0:
+        #     print('debugging8')
+        #     protocol = SoPProtocolType.Base.TM_REGISTER
         protocol = staff_msg['protocol']
         # else: protocol = SoPProtocolType.Base.TM_VALUE_PUBLISH
         device_id = staff_msg['device_id']
         payload = staff_msg['payload']
+        # # print('protocol my', protocol)
+        print('device_id my', device_id)
+        # # print('payload my', payload)
 
         return protocol, device_id, payload
 
@@ -182,8 +208,10 @@ class LoRaManagerThing(SoPManagerThing):
             # staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)   
             staff_thing_info = dict(device_id=node)
             # self._staff_register_queue.put(staff_thing_info)
-            newly_discovered_node.remove(str(node))
+            # newly_discovered_node.remove(str(node))
             staff_thing_info_list.append(dict(idx=node_idx, staff_thing_info=staff_thing_info))
+            self.current_nodes.append(node_idx)
+            # self.current_nodes = set(self.current_nodes)
             node_idx += 1
         if len(staff_thing_info_list) != 0:
             print("debugging3",staff_thing_info_list)

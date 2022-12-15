@@ -1,0 +1,58 @@
+[2022-12-15 15:43:50,055]: Skip avahi_enable search...
+[2022-12-15 15:43:50,055]: SSL is not enabled...
+[2022-12-15 15:43:50,057]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 15:43:50,057]: Register try 1
+[2022-12-15 15:43:50,057]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:50,058]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:50,058]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:50,060]: New staff_thing!!! name: [sensor0]
+[2022-12-15 15:43:50,061]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 15:43:50,062]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 219, in _receive_staff_message_thread_func
+    self._handle_staff_message(staff_msg)
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 48, in _handle_staff_message
+    self._handle_REGISTER_staff_message(msg)
+TypeError: _handle_REGISTER_staff_message() missing 1 required positional argument: 'payload'
+
+Error: _handle_REGISTER_staff_message() missing 1 required positional argument: 'payload'
+[2022-12-15 15:43:50,063]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 15:43:50,064]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 15:43:50,064]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 15:43:50,065]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:50,066]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 15:43:55,065]: Register try 2
+[2022-12-15 15:43:55,066]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:55,066]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:43:55,067]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:00,075]: Register try 3
+[2022-12-15 15:44:00,075]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:00,076]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:00,076]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:05,084]: Register try 4
+[2022-12-15 15:44:05,085]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:05,085]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:05,086]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:44:06,870]: Ctrl + C Exit
+[2022-12-15 15:44:06,871]: _alive_thread is terminated
+[2022-12-15 15:44:06,871]: _value_publish_thread is terminated
+[2022-12-15 15:44:06,871]: _scan_staff_message_thread is terminated
+[2022-12-15 15:44:06,871]: _receive_staff_message_thread is terminated
+[2022-12-15 15:44:06,871]: _publish_staff_message_thread is terminated

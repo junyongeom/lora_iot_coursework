@@ -1,0 +1,82 @@
+[2022-12-15 16:19:44,787]: Skip avahi_enable search...
+[2022-12-15 16:19:44,788]: SSL is not enabled...
+[2022-12-15 16:19:44,791]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 16:19:44,792]: Register try 1
+[2022-12-15 16:19:44,792]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:44,794]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:44,794]: New staff_thing!!! name: [sensor0]
+[2022-12-15 16:19:44,795]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:44,796]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 27.9
+}
+[2022-12-15 16:19:44,797]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 27.9
+}
+[2022-12-15 16:19:44,799]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 993.0
+}
+[2022-12-15 16:19:44,801]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -15
+}
+[2022-12-15 16:19:44,803]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -24
+}
+[2022-12-15 16:19:44,804]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 16:19:44,807]: [sensor0_moved       ] topic : sensor0/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 16:19:44,809]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:19:44,811]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 16:19:44,813]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:19:44,816]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 16:19:44,816]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:19:44,816]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 16:19:44,818]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:44,819]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:19:44,821]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 16:19:49,803]: Register try 2
+[2022-12-15 16:19:49,803]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:49,804]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:49,804]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:54,797]: New staff_thing!!! name: [sensor1]
+[2022-12-15 16:19:54,811]: Register try 3
+[2022-12-15 16:19:54,812]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:54,812]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:54,812]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:59,820]: Register try 4
+[2022-12-15 16:19:59,820]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:59,821]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:19:59,821]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:20:02,184]: Ctrl + C Exit
+[2022-12-15 16:20:02,184]: _alive_thread is terminated
+[2022-12-15 16:20:02,184]: _value_publish_thread is terminated
+[2022-12-15 16:20:02,184]: _scan_staff_message_thread is terminated
+[2022-12-15 16:20:02,184]: _receive_staff_message_thread is terminated
+[2022-12-15 16:20:02,185]: _publish_staff_message_thread is terminated

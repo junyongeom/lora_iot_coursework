@@ -1,0 +1,51 @@
+[2022-12-15 15:34:58,607]: Skip avahi_enable search...
+[2022-12-15 15:34:58,607]: SSL is not enabled...
+[2022-12-15 15:34:58,609]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 15:34:58,610]: Register try 1
+[2022-12-15 15:34:58,610]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:34:58,610]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:34:58,611]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:34:58,612]: New staff_thing!!! name: [sensor0]
+[2022-12-15 15:34:58,613]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 15:34:58,614]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 219, in _receive_staff_message_thread_func
+    self._handle_staff_message(staff_msg)
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 52, in _handle_staff_message
+    self._handle_VALUE_PUBLISH_staff_message(msg)
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 137, in _handle_VALUE_PUBLISH_staff_message
+    self._send_TM_VALUE_PUBLISH(staff_thing.get_name(),  value.dump_pub())
+TypeError: _send_TM_VALUE_PUBLISH() missing 1 required positional argument: 'payload'
+
+Error: _send_TM_VALUE_PUBLISH() missing 1 required positional argument: 'payload'
+[2022-12-15 15:34:58,627]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 15:34:58,628]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 15:34:58,629]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:34:58,630]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 15:35:03,619]: Register try 2
+[2022-12-15 15:35:03,619]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:35:03,619]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:35:03,619]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:35:05,534]: Ctrl + C Exit
+[2022-12-15 15:35:05,535]: _alive_thread is terminated
+[2022-12-15 15:35:05,535]: _value_publish_thread is terminated
+[2022-12-15 15:35:05,535]: _scan_staff_message_thread is terminated
+[2022-12-15 15:35:05,535]: _receive_staff_message_thread is terminated
+[2022-12-15 15:35:05,535]: _publish_staff_message_thread is terminated

@@ -12,7 +12,7 @@ def arg_parse():
                         required=False, default='127.0.0.1', help="host name")
     parser.add_argument("--port", '-p', action='store', type=int,
                         required=False, default=11083, help="port")
-    parser.add_argument("--alive_cycle", '-ac', action='store', type=int,
+    parser.add_argument("--alive_cycle", '-ac', action='store', type=float,
                         required=False, default=60, help="alive cycle")
     parser.add_argument("--auto_scan", '-as', action='store_true',
                         required=False, help="middleware auto scan enable")

@@ -1,0 +1,67 @@
+[2022-12-15 16:34:40,975]: Skip avahi_enable search...
+[2022-12-15 16:34:40,975]: SSL is not enabled...
+[2022-12-15 16:34:40,977]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 16:34:40,978]: Register try 1
+[2022-12-15 16:34:40,978]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:34:40,979]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:34:40,980]: New staff_thing!!! name: [sensor0]
+[2022-12-15 16:34:40,980]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:34:40,981]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 16:34:40,983]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 28.0
+}
+[2022-12-15 16:34:40,985]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 27.2
+}
+[2022-12-15 16:34:40,987]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 993.2
+}
+[2022-12-15 16:34:40,989]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -16
+}
+[2022-12-15 16:34:40,990]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -23
+}
+[2022-12-15 16:34:40,993]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1103
+}
+[2022-12-15 16:34:40,995]: [sensor0_moved       ] topic : sensor0/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 16:34:40,997]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 16:34:41,000]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:34:41,000]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 16:34:41,002]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 16:34:41,003]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 16:34:41,004]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 16:34:44,528]: Ctrl + C Exit
+[2022-12-15 16:34:44,529]: _alive_thread is terminated
+[2022-12-15 16:34:44,529]: _value_publish_thread is terminated
+[2022-12-15 16:34:44,529]: _scan_staff_message_thread is terminated
+[2022-12-15 16:34:44,529]: _receive_staff_message_thread is terminated
+[2022-12-15 16:34:44,529]: _publish_staff_message_thread is terminated
