@@ -1,0 +1,426 @@
+[2022-12-15 17:33:53,811]: Skip avahi_enable search...
+[2022-12-15 17:33:53,811]: SSL is not enabled...
+[2022-12-15 17:33:53,813]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 17:33:53,814]: Register try 1
+[2022-12-15 17:33:53,814]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 17:33:53,815]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 17:33:53,815]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 17:33:53,816]: New staff_thing!!! name: [sensor0]
+[2022-12-15 17:33:53,817]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 17:33:53,818]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-12-15 17:33:53,819]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-12-15 17:33:53,820]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,821]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-12-15 17:33:53,823]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,825]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,828]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 17:33:53,829]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,831]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.0
+}
+[2022-12-15 17:33:53,833]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 17:33:53,833]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 27.7
+}
+[2022-12-15 17:33:53,833]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 17:33:53,835]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 17:33:53,836]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 994.4
+}
+[2022-12-15 17:33:53,839]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-12-15 17:33:53,841]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -25
+}
+[2022-12-15 17:33:53,843]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1105
+}
+[2022-12-15 17:33:53,845]: [sensor0_moved       ] topic : sensor0/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 17:33:53,848]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,850]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,852]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 17:33:53,852]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor0 
+[2022-12-15 17:33:53,853]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,855]: [DUP✔                 ] Thing sensor0 register success!
+[2022-12-15 17:33:53,857]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,859]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,861]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,863]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,865]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,868]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,871]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,873]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,875]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,877]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,878]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,880]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,883]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,885]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,887]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,889]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,891]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,893]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,895]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,896]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,898]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,900]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,902]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,904]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,906]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,908]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,909]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,911]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,913]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,915]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,918]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,920]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,922]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,924]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,926]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,928]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,930]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,932]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,934]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,936]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,937]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,939]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,941]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,943]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,947]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,949]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,951]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,953]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,954]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,956]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,957]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,959]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,961]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,963]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,965]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,967]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,968]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,969]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,971]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,972]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,974]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,976]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,977]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,980]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,981]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,983]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,984]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,987]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,989]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,991]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,993]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,995]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,996]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,998]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:53,999]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,001]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,003]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,004]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,007]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,009]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,011]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,012]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,013]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,016]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,018]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,021]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,023]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,025]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,027]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,028]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,030]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,032]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,034]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,037]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,039]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,041]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,043]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,045]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,046]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,048]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,051]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,053]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,055]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,056]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,058]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,060]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,061]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,063]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,065]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,067]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,070]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,072]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,073]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,075]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,076]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,078]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,079]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,081]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,083]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,085]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,087]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,088]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,090]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,091]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,093]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,095]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,097]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,100]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,102]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,104]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,105]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,107]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,109]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,111]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,114]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,116]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,117]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,119]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,121]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,123]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,125]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,128]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,130]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,132]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,133]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,135]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,136]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,139]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,141]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,143]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,145]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,148]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,149]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,151]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,152]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,155]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,157]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,159]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,162]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,164]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,166]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,167]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,169]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,171]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,174]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,176]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,178]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,180]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,182]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,183]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,184]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,188]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,189]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,191]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,192]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,195]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,196]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,198]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,199]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,201]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,203]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,205]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,207]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,208]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,210]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,212]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,213]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,215]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,217]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,219]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,220]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,221]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,224]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,226]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,227]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,229]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,232]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,235]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,237]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,239]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,240]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,242]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,244]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,246]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,247]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,249]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,252]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,252]: Ctrl + C Exit
+[2022-12-15 17:33:54,253]: _alive_thread is terminated
+[2022-12-15 17:33:54,253]: _value_publish_thread is terminated
+[2022-12-15 17:33:54,253]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,253]: _scan_staff_message_thread is terminated
+[2022-12-15 17:33:54,254]: _receive_staff_message_thread is terminated
+[2022-12-15 17:33:54,254]: _publish_staff_message_thread is terminated
+[2022-12-15 17:33:54,255]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,256]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,258]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,260]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,263]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,264]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,266]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,268]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,270]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,272]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,273]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,275]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,277]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,279]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,282]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,283]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,285]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,286]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,288]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,290]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,292]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,295]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,297]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,299]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,300]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,302]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,303]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,305]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,307]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,309]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,311]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,313]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,315]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,317]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,318]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,320]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,322]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,323]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,324]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,326]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,328]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,329]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,331]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,333]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,335]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,336]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,339]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,340]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,343]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,345]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,347]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,348]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,350]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,353]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,356]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,357]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,359]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,360]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,363]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,365]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,368]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,370]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,372]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,374]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,376]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,378]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,380]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,382]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,384]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,385]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,387]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,389]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,390]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,392]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,393]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,395]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,396]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,400]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,402]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,404]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,405]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,407]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,408]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,411]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,413]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,415]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,418]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,420]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,422]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,424]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,425]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,428]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,430]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,431]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,433]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,434]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,436]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,437]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,438]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,440]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,442]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,443]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,444]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,446]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,447]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,449]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,450]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,452]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,453]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,455]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,458]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,459]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,461]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,462]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,464]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,465]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,467]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,469]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,472]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,473]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,475]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,477]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,479]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,481]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,482]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,484]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,486]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,488]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,490]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,491]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,493]: [TM_UNREGISTER       ] topic : TM/UNREGISTER/sensor0 payload : {}
+[2022-12-15 17:33:54,495]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 17:33:54,495]: _receive_message_thread is terminated
+[2022-12-15 17:33:54,495]: _publish_message_thread is terminated
+[2022-12-15 17:33:54,496]: Thing Exit
+[2022-12-15 17:33:54,496]: [-> DISCONNECT        ] Disconnect from Host: 127.0.0.1:11083

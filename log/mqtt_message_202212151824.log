@@ -1,0 +1,143 @@
+[2022-12-15 18:24:27,138]: Skip avahi_enable search...
+[2022-12-15 18:24:27,139]: SSL is not enabled...
+[2022-12-15 18:24:27,141]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 18:24:27,142]: Register try 1
+[2022-12-15 18:24:27,142]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:24:27,143]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:24:27,144]: New staff_thing!!! name: [sensor0]
+[2022-12-15 18:24:27,145]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:24:27,146]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 18:24:27,146]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-12-15 18:24:27,147]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-12-15 18:24:27,148]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-12-15 18:24:27,151]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 18:24:27,153]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.4
+}
+[2022-12-15 18:24:27,155]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 28.7
+}
+[2022-12-15 18:24:27,157]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.9
+}
+[2022-12-15 18:24:27,159]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-12-15 18:24:27,161]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -29
+}
+[2022-12-15 18:24:27,162]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:24:27,163]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 18:24:27,163]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:24:27,164]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:24:27,165]: [sensor0_moved       ] topic : sensor0/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 18:24:29,953]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:24:29,953]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor0 
+[2022-12-15 18:24:29,955]: [DUP✔                 ] Thing sensor0 register success!
+[2022-12-15 18:24:30,152]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:24:30,155]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-12-15 18:24:30,158]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:24:30,160]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:24:33,153]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 28.8
+}
+[2022-12-15 18:24:33,155]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.9
+}
+[2022-12-15 18:24:33,157]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -14
+}
+[2022-12-15 18:24:33,159]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -28
+}
+[2022-12-15 18:24:33,161]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:24:36,153]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.3
+}
+[2022-12-15 18:24:36,155]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 28.7
+}
+[2022-12-15 18:24:36,157]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:24:36,158]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -13
+}
+[2022-12-15 18:24:36,160]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -25
+}
+[2022-12-15 18:24:36,162]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1103
+}
+[2022-12-15 18:24:37,146]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 172, in _scan_staff_message_thread_func
+    raise Exception('Scan staff thing error')
+Exception: Scan staff thing error
+
+Error: Scan staff thing error
+[2022-12-15 18:25:00,481]: Ctrl + C Exit
+[2022-12-15 18:25:00,482]: [TM_UNREGISTER       ] topic : TM/UNREGISTER/sensor0 payload : {}
+[2022-12-15 18:25:00,509]: [MT_RESULT_UNREGISTER] topic : MT/RESULT/UNREGISTER/sensor0 payload : {
+    "error": -1
+}
+[2022-12-15 18:25:00,509]: [print_packet] Unexpected topic!!! : MT/RESULT/UNREGISTER/sensor0 
+[2022-12-15 18:25:00,511]: [✖✖✖                  ] Thing lora_manager_thing_D8F3BC801CFB register packset was nonvaild
+[2022-12-15 18:25:00,512]: [handle_MT_RESULT_UNREGISTER] Unregister failed... error code : -1

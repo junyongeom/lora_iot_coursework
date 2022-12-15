@@ -1,0 +1,721 @@
+[2022-12-15 18:35:46,447]: Skip avahi_enable search...
+[2022-12-15 18:35:46,447]: SSL is not enabled...
+[2022-12-15 18:35:46,449]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 18:35:46,450]: Register try 1
+[2022-12-15 18:35:46,450]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:35:46,452]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:35:46,452]: New staff_thing!!! name: [sensor0]
+[2022-12-15 18:35:46,452]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:35:46,453]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 18:35:46,454]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor0
+[2022-12-15 18:35:46,455]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor0
+[2022-12-15 18:35:46,456]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor0
+[2022-12-15 18:35:46,459]: [TM_REGISTER         ] topic : TM/REGISTER/sensor0 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 18:35:46,461]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:35:46,463]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:35:46,465]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.4
+}
+[2022-12-15 18:35:46,468]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:35:46,471]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:35:46,474]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:35:46,474]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:35:46,475]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 18:35:46,476]: [sensor0_moved       ] topic : sensor0/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 18:35:46,476]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:35:49,460]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.8
+}
+[2022-12-15 18:35:49,462]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:35:49,464]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:35:49,466]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:35:50,138]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor0 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:35:50,138]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor0 
+[2022-12-15 18:35:50,139]: [DUP✔                 ] Thing sensor0 register success!
+[2022-12-15 18:35:52,461]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.9
+}
+[2022-12-15 18:35:52,464]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:35:52,467]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:35:52,469]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:35:55,461]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.8
+}
+[2022-12-15 18:35:55,463]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.9
+}
+[2022-12-15 18:35:55,465]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:35:55,468]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -31
+}
+[2022-12-15 18:35:55,470]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:35:56,454]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:35:58,460]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:35:58,463]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:35:58,465]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.4
+}
+[2022-12-15 18:35:58,467]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:35:58,468]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:36:01,462]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:36:01,464]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.4
+}
+[2022-12-15 18:36:01,465]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:36:01,467]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:01,469]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:36:04,464]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 996.2
+}
+[2022-12-15 18:36:04,465]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:04,467]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:36:06,456]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:07,462]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.5
+}
+[2022-12-15 18:36:07,464]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 996.1
+}
+[2022-12-15 18:36:07,466]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:07,468]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -31
+}
+[2022-12-15 18:36:07,470]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:36:13,465]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:36:13,467]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:36:13,471]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:13,473]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:36:16,458]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:16,466]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:36:16,468]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:36:16,472]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:16,474]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:16,476]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:36:19,464]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:36:19,466]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:36:19,469]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.2
+}
+[2022-12-15 18:36:19,470]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:36:19,472]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:19,474]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:36:22,465]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:36:22,470]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:22,472]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1048
+}
+[2022-12-15 18:36:25,467]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:36:25,471]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:25,473]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:25,475]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:36:26,459]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:28,468]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.9
+}
+[2022-12-15 18:36:28,471]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.8
+}
+[2022-12-15 18:36:28,472]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:36:28,474]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:28,476]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:36:31,468]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.0
+}
+[2022-12-15 18:36:31,470]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:36:31,473]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:36:31,475]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:36:34,467]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:36:34,469]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.1
+}
+[2022-12-15 18:36:34,473]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:34,475]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:36:36,461]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:37,468]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:36:37,474]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -28
+}
+[2022-12-15 18:36:37,476]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:36:40,469]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.2
+}
+[2022-12-15 18:36:40,472]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 994.7
+}
+[2022-12-15 18:36:40,474]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:40,476]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:40,478]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:36:43,472]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:36:43,476]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:43,477]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:36:46,463]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:46,469]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.3
+}
+[2022-12-15 18:36:46,473]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.2
+}
+[2022-12-15 18:36:46,477]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -31
+}
+[2022-12-15 18:36:46,480]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:36:46,511]: [TM_ALIVE            ] topic : TM/ALIVE/sensor0 payload : {}
+[2022-12-15 18:36:49,470]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.4
+}
+[2022-12-15 18:36:49,473]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:36:49,476]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -9
+}
+[2022-12-15 18:36:49,477]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:36:49,479]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1103
+}
+[2022-12-15 18:36:52,472]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.4
+}
+[2022-12-15 18:36:52,477]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:52,479]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:52,481]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:36:55,471]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.6
+}
+[2022-12-15 18:36:55,474]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 996.0
+}
+[2022-12-15 18:36:55,476]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -9
+}
+[2022-12-15 18:36:55,478]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:36:55,480]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:36:56,464]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:36:58,472]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.5
+}
+[2022-12-15 18:36:58,476]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:36:58,477]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:36:58,479]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:36:58,482]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:37:01,473]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.4
+}
+[2022-12-15 18:37:01,475]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.8
+}
+[2022-12-15 18:37:01,479]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:37:01,481]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:37:04,476]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:37:04,478]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-12-15 18:37:04,480]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -31
+}
+[2022-12-15 18:37:04,482]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1047
+}
+[2022-12-15 18:37:06,466]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:37:07,474]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.3
+}
+[2022-12-15 18:37:07,478]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.8
+}
+[2022-12-15 18:37:07,481]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:37:07,483]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:37:07,486]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:37:10,475]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.2
+}
+[2022-12-15 18:37:10,477]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.9
+}
+[2022-12-15 18:37:10,481]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:37:10,483]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:37:10,485]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:37:13,475]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.1
+}
+[2022-12-15 18:37:13,477]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.7
+}
+[2022-12-15 18:37:13,481]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:37:13,483]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -28
+}
+[2022-12-15 18:37:13,485]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:37:16,468]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:37:16,479]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.4
+}
+[2022-12-15 18:37:16,481]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -12
+}
+[2022-12-15 18:37:16,483]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -29
+}
+[2022-12-15 18:37:16,486]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:37:22,480]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:37:22,482]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:37:22,483]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:37:22,488]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-12-15 18:37:25,478]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 30.0
+}
+[2022-12-15 18:37:25,480]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:37:25,483]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:37:25,485]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:37:25,487]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:37:26,470]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:37:28,476]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.5
+}
+[2022-12-15 18:37:28,478]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.9
+}
+[2022-12-15 18:37:28,481]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.5
+}
+[2022-12-15 18:37:28,485]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:37:28,487]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:37:31,478]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.7
+}
+[2022-12-15 18:37:31,482]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.2
+}
+[2022-12-15 18:37:31,485]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -29
+}
+[2022-12-15 18:37:31,489]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:37:34,477]: [sensor0_temperature ] topic : sensor0/temperature payload : {
+    "type": "double",
+    "value": 29.4
+}
+[2022-12-15 18:37:34,479]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.6
+}
+[2022-12-15 18:37:34,485]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:37:34,491]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1100
+}
+[2022-12-15 18:37:36,471]: Staff thing [sensor0] was still alive...
+[2022-12-15 18:37:37,479]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.3
+}
+[2022-12-15 18:37:37,483]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 995.7
+}
+[2022-12-15 18:37:37,485]: [sensor0_ax          ] topic : sensor0/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:37:37,487]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:37:37,489]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1045
+}
+[2022-12-15 18:37:40,480]: [sensor0_humidity    ] topic : sensor0/humidity payload : {
+    "type": "double",
+    "value": 29.2
+}
+[2022-12-15 18:37:40,484]: [sensor0_pressure    ] topic : sensor0/pressure payload : {
+    "type": "int",
+    "value": 996.1
+}
+[2022-12-15 18:37:40,488]: [sensor0_ay          ] topic : sensor0/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:37:40,489]: [sensor0_az          ] topic : sensor0/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:37:41,266]: Ctrl + C Exit
+[2022-12-15 18:37:41,267]: [TM_UNREGISTER       ] topic : TM/UNREGISTER/sensor0 payload : {}
+[2022-12-15 18:37:41,290]: [MT_RESULT_UNREGISTER] topic : MT/RESULT/UNREGISTER/sensor0 payload : {
+    "error": -1
+}
+[2022-12-15 18:37:41,290]: [print_packet] Unexpected topic!!! : MT/RESULT/UNREGISTER/sensor0 
+[2022-12-15 18:37:41,291]: [✖✖✖                  ] Thing lora_manager_thing_D8F3BC801CFB register packset was nonvaild
+[2022-12-15 18:37:41,291]: [handle_MT_RESULT_UNREGISTER] Unregister failed... error code : -1

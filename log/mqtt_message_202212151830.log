@@ -1,0 +1,271 @@
+[2022-12-15 18:30:24,287]: Skip avahi_enable search...
+[2022-12-15 18:30:24,287]: SSL is not enabled...
+[2022-12-15 18:30:24,289]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 18:30:24,290]: Register try 1
+[2022-12-15 18:30:24,291]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:30:24,291]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:30:24,293]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:30:24,293]: New staff_thing!!! name: [sensor1]
+[2022-12-15 18:30:24,294]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 18:30:24,294]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor1
+[2022-12-15 18:30:24,295]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor1
+[2022-12-15 18:30:24,295]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor1
+[2022-12-15 18:30:24,299]: [TM_REGISTER         ] topic : TM/REGISTER/sensor1 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 18:30:24,301]: [sensor1_temperature ] topic : sensor1/temperature payload : {
+    "type": "double",
+    "value": 29.5
+}
+[2022-12-15 18:30:24,303]: [sensor1_humidity    ] topic : sensor1/humidity payload : {
+    "type": "double",
+    "value": 30.5
+}
+[2022-12-15 18:30:24,304]: [sensor1_pressure    ] topic : sensor1/pressure payload : {
+    "type": "int",
+    "value": 995.1
+}
+[2022-12-15 18:30:24,306]: [sensor1_ax          ] topic : sensor1/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:30:24,309]: [sensor1_ay          ] topic : sensor1/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:30:24,312]: [sensor1_az          ] topic : sensor1/az payload : {
+    "type": "int",
+    "value": 1049
+}
+[2022-12-15 18:30:24,313]: [sensor1_moved       ] topic : sensor1/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 18:30:24,314]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:30:24,314]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 18:30:24,314]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 18:30:27,299]: [sensor1_pressure    ] topic : sensor1/pressure payload : {
+    "type": "int",
+    "value": 995.9
+}
+[2022-12-15 18:30:27,301]: [sensor1_ax          ] topic : sensor1/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:30:27,303]: [sensor1_ay          ] topic : sensor1/ay payload : {
+    "type": "int",
+    "value": -26
+}
+[2022-12-15 18:30:27,305]: [sensor1_az          ] topic : sensor1/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:30:27,581]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor1 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:30:27,582]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor1 
+[2022-12-15 18:30:27,582]: [DUP✔                 ] Thing sensor1 register success!
+[2022-12-15 18:30:30,301]: [sensor1_humidity    ] topic : sensor1/humidity payload : {
+    "type": "double",
+    "value": 30.3
+}
+[2022-12-15 18:30:30,303]: [sensor1_pressure    ] topic : sensor1/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:30:30,306]: [sensor1_ax          ] topic : sensor1/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:30:30,310]: [sensor1_ay          ] topic : sensor1/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:30:30,313]: [sensor1_az          ] topic : sensor1/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:30:33,301]: [sensor1_pressure    ] topic : sensor1/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:30:33,303]: [sensor1_ay          ] topic : sensor1/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:30:33,305]: [sensor1_az          ] topic : sensor1/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:30:34,294]: New staff_thing!!! name: [sensor2]
+[2022-12-15 18:30:34,296]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor2
+[2022-12-15 18:30:34,297]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor2
+[2022-12-15 18:30:34,298]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor2
+[2022-12-15 18:30:34,301]: [TM_REGISTER         ] topic : TM/REGISTER/sensor2 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 18:30:34,303]: [sensor2_temperature ] topic : sensor2/temperature payload : {
+    "type": "double",
+    "value": 29.5
+}
+[2022-12-15 18:30:34,306]: [sensor2_humidity    ] topic : sensor2/humidity payload : {
+    "type": "double",
+    "value": 30.3
+}
+[2022-12-15 18:30:34,308]: [sensor2_pressure    ] topic : sensor2/pressure payload : {
+    "type": "int",
+    "value": 995.3
+}
+[2022-12-15 18:30:34,310]: [sensor2_ax          ] topic : sensor2/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:30:34,312]: [sensor2_ay          ] topic : sensor2/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:30:34,314]: [sensor2_az          ] topic : sensor2/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:30:34,316]: [sensor2_moved       ] topic : sensor2/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 18:30:34,359]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor2 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:30:34,359]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor2 
+[2022-12-15 18:30:34,360]: [DUP✔                 ] Thing sensor2 register success!
+[2022-12-15 18:30:37,301]: [sensor2_pressure    ] topic : sensor2/pressure payload : {
+    "type": "int",
+    "value": 995.6
+}
+[2022-12-15 18:30:37,303]: [sensor2_ax          ] topic : sensor2/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:30:37,305]: [sensor2_ay          ] topic : sensor2/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:30:37,307]: [sensor2_az          ] topic : sensor2/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:30:40,302]: [sensor2_temperature ] topic : sensor2/temperature payload : {
+    "type": "double",
+    "value": 29.4
+}
+[2022-12-15 18:30:40,304]: [sensor2_pressure    ] topic : sensor2/pressure payload : {
+    "type": "int",
+    "value": 995.8
+}
+[2022-12-15 18:30:40,306]: [sensor2_ax          ] topic : sensor2/ax payload : {
+    "type": "int",
+    "value": -11
+}
+[2022-12-15 18:30:40,308]: [sensor2_ay          ] topic : sensor2/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:30:40,310]: [sensor2_az          ] topic : sensor2/az payload : {
+    "type": "int",
+    "value": 1101
+}
+[2022-12-15 18:30:43,303]: [sensor2_pressure    ] topic : sensor2/pressure payload : {
+    "type": "int",
+    "value": 995.4
+}
+[2022-12-15 18:30:43,305]: [sensor2_ay          ] topic : sensor2/ay payload : {
+    "type": "int",
+    "value": -30
+}
+[2022-12-15 18:30:43,307]: [sensor2_az          ] topic : sensor2/az payload : {
+    "type": "int",
+    "value": 1046
+}
+[2022-12-15 18:30:44,297]: New staff_thing!!! name: [sensor3]
+[2022-12-15 18:30:44,300]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/sensor3
+[2022-12-15 18:30:44,300]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/sensor3
+[2022-12-15 18:30:44,301]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/sensor3
+[2022-12-15 18:30:44,310]: [TM_REGISTER         ] topic : TM/REGISTER/sensor3 payload : {
+    "alive_cycle": 10,
+    "functions": [
+        {
+            "arguments": [],
+            "description": "",
+            "energy": null,
+            "exec_time": 10000,
+            "name": "__temperature",
+            "return_type": "double",
+skip... (print_packet mode=SoPPrintMode.ABBR)
+[2022-12-15 18:30:44,313]: [sensor3_temperature ] topic : sensor3/temperature payload : {
+    "type": "double",
+    "value": 29.4
+}
+[2022-12-15 18:30:44,315]: [sensor3_humidity    ] topic : sensor3/humidity payload : {
+    "type": "double",
+    "value": 30.3
+}
+[2022-12-15 18:30:44,317]: [sensor3_pressure    ] topic : sensor3/pressure payload : {
+    "type": "int",
+    "value": 995.8
+}
+[2022-12-15 18:30:44,319]: [sensor3_ax          ] topic : sensor3/ax payload : {
+    "type": "int",
+    "value": -10
+}
+[2022-12-15 18:30:44,321]: [sensor3_ay          ] topic : sensor3/ay payload : {
+    "type": "int",
+    "value": -27
+}
+[2022-12-15 18:30:44,323]: [sensor3_az          ] topic : sensor3/az payload : {
+    "type": "int",
+    "value": 1102
+}
+[2022-12-15 18:30:44,327]: [sensor3_moved       ] topic : sensor3/moved payload : {
+    "type": "int",
+    "value": 0
+}
+[2022-12-15 18:30:44,379]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/sensor3 payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 18:30:44,379]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/sensor3 
+[2022-12-15 18:30:44,379]: [DUP✔                 ] Thing sensor3 register success!
+[2022-12-15 18:30:45,446]: Ctrl + C Exit
+[2022-12-15 18:30:45,447]: [TM_UNREGISTER       ] topic : TM/UNREGISTER/sensor3 payload : {}
+[2022-12-15 18:30:45,495]: [MT_RESULT_UNREGISTER] topic : MT/RESULT/UNREGISTER/sensor3 payload : {
+    "error": -1
+}
+[2022-12-15 18:30:45,495]: [print_packet] Unexpected topic!!! : MT/RESULT/UNREGISTER/sensor3 
+[2022-12-15 18:30:45,496]: [✖✖✖                  ] Thing lora_manager_thing_D8F3BC801CFB register packset was nonvaild
+[2022-12-15 18:30:45,496]: [handle_MT_RESULT_UNREGISTER] Unregister failed... error code : -1

@@ -17,6 +17,8 @@ class LoRaManagerThing(SoPManagerThing):
         super().__init__(name, service_list, alive_cycle, is_super, is_parallel,
                          ip, port, ssl_ca_path, ssl_enable, log_name, log_enable, log_mode, append_mac_address,
                          manager_mode, scan_cycle)
+        # print('ccccc', alive_cycle)
+        self._alive_cycle = alive_cycle
         self._staff_thing_list: List[LoRaStaffThing] = []
         self.my_serial = serial.Serial(serial_port, baudrate=baud_rate, timeout=None)   
         self.current_nodes = []     
@@ -32,31 +34,31 @@ class LoRaManagerThing(SoPManagerThing):
         print('done..')
         return super().setup(avahi_enable=avahi_enable)
 
-    def _handle_staff_message(self, msg: str):  ################### jy
-        global newly_discovered_node
-        protocol_type = None
-        lora_device_list: Dict = msg
+    # def _handle_staff_message(self, msg: str):  ################### jy
+    #     global newly_discovered_node
+    #     protocol_type = None
+    #     lora_device_list: Dict = msg
         
-        # if len(newly_discovered_node) != 0 and len(self.current_nodes) == 0:
-        if len(newly_discovered_node) != 0:
-            print('debugging9')
-            protocol_type = [SoPProtocolType.Base.TM_REGISTER]
-        else:
-            # time.sleep(0.5)
-            protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
+    #     # if len(newly_discovered_node) != 0 and len(self.current_nodes) == 0:
+    #     if len(newly_discovered_node) != 0:
+    #         print('debugging9')
+    #         protocol_type = [SoPProtocolType.Base.TM_REGISTER]
+    #     else:
+    #         # time.sleep(0.5)
+    #         protocol_type = [SoPProtocolType.Base.TM_VALUE_PUBLISH]
         
-        if SoPProtocolType.Base.TM_REGISTER in protocol_type:
-            # self._handle_staff_REGISTER(msg)
-            print('debugging7')
-            self._handle_REGISTER_staff_message(msg)
-        elif SoPProtocolType.Base.TM_ALIVE in protocol_type:
-            print('debugging10')
-            self._handle_staff_ALIVE(msg)
-        elif SoPProtocolType.Base.TM_VALUE_PUBLISH in protocol_type or SoPProtocolType.Base.TM_VALUE_PUBLISH_OLD in protocol_type:
-            # self._handle_staff_VALUE_PUBLISH(msg)
-            self._handle_VALUE_PUBLISH_staff_message(msg)
-        elif SoPProtocolType.Base.TM_RESULT_EXECUTE in protocol_type:
-            self._handle_staff_RESULT_EXECUTE(msg)
+    #     if SoPProtocolType.Base.TM_REGISTER in protocol_type:
+    #         # self._handle_staff_REGISTER(msg)
+    #         print('debugging7')
+    #         self._handle_REGISTER_staff_message(msg)
+    #     elif SoPProtocolType.Base.TM_ALIVE in protocol_type:
+    #         print('debugging10')
+    #         self._handle_staff_ALIVE(msg)
+    #     elif SoPProtocolType.Base.TM_VALUE_PUBLISH in protocol_type or SoPProtocolType.Base.TM_VALUE_PUBLISH_OLD in protocol_type:
+    #         # self._handle_staff_VALUE_PUBLISH(msg)
+    #         self._handle_VALUE_PUBLISH_staff_message(msg)
+    #     elif SoPProtocolType.Base.TM_RESULT_EXECUTE in protocol_type:
+    #         self._handle_staff_RESULT_EXECUTE(msg)
     
     # def _handle_staff_REGISTER(self, msg):  ### jy
     #     global newly_discovered_node, node_idx
@@ -104,6 +106,34 @@ class LoRaManagerThing(SoPManagerThing):
 
 
     ##################################
+
+    def _alive_thread_func(self, stop_event: Event) -> Union[bool, None]:
+        try:
+            while not stop_event.wait(THREAD_TIME_OUT):
+                time.sleep(self._alive_cycle)
+                # print('crazy')
+                if self._manager_mode == SoPManagerMode.JOIN:
+                    current_time = get_current_time()
+                    if current_time - self._last_alive_time > self._alive_cycle:
+                        for staff_thing in self._staff_thing_list:
+                            self._send_TM_ALIVE(
+                                thing_name=staff_thing.get_name())
+                            staff_thing._last_alive_time = current_time
+                elif self._manager_mode == SoPManagerMode.SPLIT:
+                    # api 방식일 때에는 staff thing이 계속 staff_thing_list에 남아있는 것으로 alive를 처리한다.
+                    current_time = get_current_time()
+                    for staff_thing in self._staff_thing_list:
+                        if current_time - staff_thing._last_alive_time > staff_thing._alive_cycle:
+                            self._send_TM_ALIVE(thing_name=staff_thing._name)
+                            staff_thing._last_alive_time = current_time
+                    pass
+                else:
+                    raise Exception('Invalid Manager Mode')
+        except Exception as e:
+            stop_event.set()
+            print_error(e)
+            return False
+
     # override
     def _connect_staff_thing(self, staff_thing: SoPStaffThing) -> bool:
         # api 방식에서는 api 요청 결과에 staff thing이 포함되어 있으면 연결.
@@ -182,7 +212,7 @@ class LoRaManagerThing(SoPManagerThing):
 
     # override
     def _parse_staff_message(self, staff_msg) -> Tuple[SoPProtocolType, str, str]:
-        print('staffmmm', staff_msg)
+        # print('staffmmm', staff_msg)
         # protocol = None
         # if len(newly_discovered_node) != 0 and len(self.current_nodes) !=0:
         #     print('debugging8')
@@ -204,15 +234,17 @@ class LoRaManagerThing(SoPManagerThing):
         print('node', newly_discovered_node)
     
         staff_thing_info_list = []
-        for node in newly_discovered_node:            
-            # staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)   
+        
+        for node in newly_discovered_node: 
+            if node not in self.current_nodes:
+                node_idx += 1                              
+                self.current_nodes.append(node) 
+                        
             staff_thing_info = dict(device_id=node)
-            # self._staff_register_queue.put(staff_thing_info)
-            # newly_discovered_node.remove(str(node))
             staff_thing_info_list.append(dict(idx=node_idx, staff_thing_info=staff_thing_info))
-            self.current_nodes.append(node_idx)
-            # self.current_nodes = set(self.current_nodes)
-            node_idx += 1
+                           
+            
+        
         if len(staff_thing_info_list) != 0:
             print("debugging3",staff_thing_info_list)
             return staff_thing_info_list
