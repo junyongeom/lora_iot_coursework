@@ -35,3 +35,53 @@ class LoRaStaffThing(SoPStaffThing):
 
     def current_az(self) -> int:
         return get_az(self._device_id)
+
+    # override
+    def make_service_list(self):
+        tag_list = [SoPTag(name='lora_sensor')]
+        staff_function_list: List[SoPService] = []
+        staff_value_list: List[SoPService] = [SoPValue(name='temperature',
+                                                       func=self.current_temperature,
+                                                       type=SoPType.DOUBLE,  
+                                                       bound=(-100, 100),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='humidity',
+                                                       func=self.current_humidity,
+                                                       type=SoPType.DOUBLE,
+                                                       bound=(-100, 100),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='pressure',
+                                                       func=self.current_pressure,
+                                                       type=SoPType.INTEGER ,
+                                                       bound=(-10000, 10000),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='ax',
+                                                       func=self.current_ax,
+                                                       type=SoPType.INTEGER ,  
+                                                       bound=(-10000, 10000),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='ay',
+                                                       func=self.current_ay,
+                                                       type=SoPType.INTEGER,
+                                                       bound=(-10000, 10000),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='az',
+                                                       func=self.current_az,
+                                                       type=SoPType.INTEGER,
+                                                       bound=(-10000, 10000),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              SoPValue(name='moved',
+                                                       func=self.moved,
+                                                       type=SoPType.INTEGER,
+                                                       bound=(-2, 2),
+                                                       cycle=3,
+                                                       tag_list=tag_list),
+                                              ]
+        
+        self.add_tag_to_service(staff_value_list + staff_function_list)

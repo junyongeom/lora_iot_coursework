@@ -25,7 +25,7 @@ def arg_parse():
     parser.add_argument("--scan_cycle", '-sc', action='store', type=int,
                         required=False, default=10, help="scan_cycle")
     parser.add_argument("--mode", '-md', action='store', type=str,
-                        required=False, default=SoPManagerMode.JOIN.value, help="scan_cycle")
+                        required=False, default=SoPManagerMode.JOIN.value, help="manager_mode")
                       
     arg_list, unknown = parser.parse_known_args()
 
@@ -35,7 +35,7 @@ def arg_parse():
 def generate_thing(args):
     client = LoRaManagerThing(name=args.name, ip=args.host, port=args.port, ssl_ca_path=None, ssl_enable=False,
                                 alive_cycle=args.alive_cycle, service_list=[], scan_cycle=args.scan_cycle,
-                                mode=args.mode, serial_port = args.serial_port, baud_rate = args.baud_rate,)                                
+                                manager_mode=args.mode, serial_port = args.serial_port, baud_rate = args.baud_rate,)                                
     return client
 
 

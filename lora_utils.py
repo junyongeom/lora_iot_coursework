@@ -106,7 +106,7 @@ def alive_check():
             if curr - node_life[node] > 15:
                 node_table.remove(node)
 
-class LoRaStaffThingInfo(SoPStaffThingInfo):
-    def __init__(self, device_id: str, idx: int) -> None:
-        super().__init__(device_id)       
-        self.idx = idx
+# class LoRaStaffThingInfo(SoPStaffThingInfo):
+#     def __init__(self, device_id: str, idx: int) -> None:
+#         super().__init__(device_id)       
+#         self.idx = idx
