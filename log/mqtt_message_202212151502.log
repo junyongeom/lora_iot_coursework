@@ -1,0 +1,50 @@
+[2022-12-15 15:02:15,519]: Skip avahi_enable search...
+[2022-12-15 15:02:15,556]: SSL is not enabled...
+[2022-12-15 15:02:15,557]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 15:02:15,559]: Register try 1
+[2022-12-15 15:02:15,559]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:15,560]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:15,561]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:15,562]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 15:02:15,563]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 180, in _scan_staff_message_thread_func
+    staff_thing = self._create_staff(staff_thing_info)
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 206, in _create_staff
+    lora_child_thing.make_service_list()
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_staff_thing.py", line 87, in make_service_list
+    self.add_tag_to_service(staff_value_list + staff_function_list)
+AttributeError: 'LoRaStaffThing' object has no attribute 'add_tag_to_service'
+
+Error: 'LoRaStaffThing' object has no attribute 'add_tag_to_service'
+[2022-12-15 15:02:15,566]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 15:02:15,566]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 15:02:15,567]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:15,568]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 15:02:20,569]: Register try 2
+[2022-12-15 15:02:20,569]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:20,569]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:20,570]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 15:02:24,054]: Ctrl + C Exit
+[2022-12-15 15:02:24,055]: _alive_thread is terminated
+[2022-12-15 15:02:24,055]: _value_publish_thread is terminated
+[2022-12-15 15:02:24,055]: _scan_staff_message_thread is terminated
+[2022-12-15 15:02:24,055]: _receive_staff_message_thread is terminated
+[2022-12-15 15:02:24,056]: _publish_staff_message_thread is terminated

@@ -1,0 +1,102 @@
+[2022-12-15 11:28:11,814]: Skip avahi_enable search...
+[2022-12-15 11:28:11,814]: SSL is not enabled...
+[2022-12-15 11:28:11,816]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 11:28:11,817]: Register try 1
+[2022-12-15 11:28:11,817]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:11,817]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:11,818]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:11,819]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 11:28:11,820]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 170, in _scan_staff_message_thread_func
+    staff_thing_info_list = self._scan_staff_thing()
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 171, in _scan_staff_thing
+    if (len(newly_discovered_node != 0)):
+TypeError: object of type 'bool' has no len()
+
+Error: object of type 'bool' has no len()
+[2022-12-15 11:28:11,861]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 11:28:11,861]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 11:28:11,862]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:11,863]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 11:28:16,825]: Register try 2
+[2022-12-15 11:28:16,825]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:16,825]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:16,825]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:19,001]: Ctrl + C Exit
+[2022-12-15 11:28:19,001]: _alive_thread is terminated
+[2022-12-15 11:28:19,001]: _value_publish_thread is terminated
+[2022-12-15 11:28:19,002]: _scan_staff_message_thread is terminated
+[2022-12-15 11:28:19,002]: _receive_staff_message_thread is terminated
+[2022-12-15 11:28:19,002]: _publish_staff_message_thread is terminated
+[2022-12-15 11:28:28,559]: Skip avahi_enable search...
+[2022-12-15 11:28:28,568]: SSL is not enabled...
+[2022-12-15 11:28:28,570]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 11:28:28,571]: Register try 1
+[2022-12-15 11:28:28,571]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:28,571]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:28,572]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:28,573]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 170, in _scan_staff_message_thread_func
+    staff_thing_info_list = self._scan_staff_thing()
+  File "/home/jyeom/1214iot/big-thing-py-examples/manager_thing/lora_manager_thing/lora_manager_thing.py", line 171, in _scan_staff_thing
+    if (len(newly_discovered_node != 0)):
+TypeError: object of type 'bool' has no len()
+
+Error: object of type 'bool' has no len()
+[2022-12-15 11:28:28,575]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 11:28:28,577]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 11:28:28,577]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 11:28:28,577]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:28,578]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 11:28:33,580]: Register try 2
+[2022-12-15 11:28:33,581]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:33,618]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:33,618]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:38,627]: Register try 3
+[2022-12-15 11:28:38,627]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:38,664]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:38,664]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:43,672]: Register try 4
+[2022-12-15 11:28:43,672]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:43,709]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:43,709]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:48,716]: Register try 5
+[2022-12-15 11:28:48,717]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:48,754]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 11:28:48,754]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB

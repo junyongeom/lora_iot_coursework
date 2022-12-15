@@ -60,46 +60,47 @@ class LoRaManagerThing(SoPManagerThing):
     #         newly_discovered_node.remove(str(node))
 
 
-    def _receive_staff_packet(self): ### jy
-        cur_time = time.time()
-        global node_table
-        lora_device_list = node_table
-        # for discover lora staff thing
-        if cur_time - self._last_scan_time > self._scan_cycle:
-            print('get staff things list...')
-            for staff_thing in self._staff_thing_list:
-                self._send_TM_ALIVE(staff_thing.get_name())
-                staff_thing.set_last_alive_time(cur_time)
-            if self.verify_lora_request_result(node_table):
-                self._last_scan_time = cur_time
-                return lora_device_list
-            else:
-                return False
-        else:
-            for staff_thing in self._staff_thing_list:
-                # for check lora staff thing alive
-                if staff_thing.get_registered() and cur_time - staff_thing.get_last_alive_time() > staff_thing.get_alive_cycle():
-                    if self.verify_lora_request_result(lora_device_list):
-                        self._send_TM_ALIVE(staff_thing.get_name())
-                        staff_thing.set_last_alive_time(cur_time)
-                        return lora_device_list
-                    else:
-                        return False
-                # for check lora staff thing value publish cycle
-                else:
-                    for value in staff_thing.get_value_list():
-                        if cur_time - value.get_last_update_time() > value.get_cycle():
-                            # update() method update _last_update_time of SoPValue
-                            value.update()  # TM_VALUE_PUBLISH thing name, value name, payload  
-                            self._send_TM_VALUE_PUBLISH("MT/EXECUTE/__"+value.get_name(), staff_thing.get_name(), value.dump_pub())
+    # def _receive_staff_packet(self): ### jy
+    #     cur_time = time.time()
+    #     global node_table
+    #     lora_device_list = node_table
+    #     # for discover lora staff thing
+    #     if cur_time - self._last_scan_time > self._scan_cycle:
+    #         print('get staff things list...')
+    #         for staff_thing in self._staff_thing_list:
+    #             self._send_TM_ALIVE(staff_thing.get_name())
+    #             staff_thing.set_last_alive_time(cur_time)
+    #         if self.verify_lora_request_result(node_table):
+    #             self._last_scan_time = cur_time
+    #             return lora_device_list
+    #         else:
+    #             return False
+    #     else:
+    #         for staff_thing in self._staff_thing_list:
+    #             # for check lora staff thing alive
+    #             if staff_thing.get_registered() and cur_time - staff_thing.get_last_alive_time() > staff_thing.get_alive_cycle():
+    #                 if self.verify_lora_request_result(lora_device_list):
+    #                     self._send_TM_ALIVE(staff_thing.get_name())
+    #                     staff_thing.set_last_alive_time(cur_time)
+    #                     return lora_device_list
+    #                 else:
+    #                     return False
+    #             # for check lora staff thing value publish cycle
+    #             else:
+    #                 for value in staff_thing.get_value_list():
+    #                     if cur_time - value.get_last_update_time() > value.get_cycle():
+    #                         # update() method update _last_update_time of SoPValue
+    #                         value.update()  # TM_VALUE_PUBLISH thing name, value name, payload  
+    #                         self._send_TM_VALUE_PUBLISH("MT/EXECUTE/__"+value.get_name(), staff_thing.get_name(), value.dump_pub())
 
-        return None
+    #     return None
 
 
     ##################################
     # override
     def _connect_staff_thing(self, staff_thing: SoPStaffThing) -> bool:
         # api 방식에서는 api 요청 결과에 staff thing이 포함되어 있으면 연결.
+        print('debugging2')
         staff_thing._receive_queue.put(dict(device_id=staff_thing.get_device_id(),
                                             protocol=SoPProtocolType.Base.TM_REGISTER,
                                             payload=staff_thing.dump()))
@@ -112,7 +113,7 @@ class LoRaManagerThing(SoPManagerThing):
 
     # override
     def _handle_REGISTER_staff_message(self, staff_thing: SoPStaffThing, payload: str) -> Tuple[str, dict]:
-        
+        print('debugging5')
         return staff_thing.get_name(), payload
 
     # override
@@ -159,7 +160,12 @@ class LoRaManagerThing(SoPManagerThing):
 
     # override
     def _parse_staff_message(self, staff_msg) -> Tuple[SoPProtocolType, str, str]:
+        print('staffmmm', staff_msg)
+        # protocol = None
+        # if len(newly_discovered_node) != 0:
+        #      protocol = SoPProtocolType.Base.TM_REGISTER
         protocol = staff_msg['protocol']
+        # else: protocol = SoPProtocolType.Base.TM_VALUE_PUBLISH
         device_id = staff_msg['device_id']
         payload = staff_msg['payload']
 
@@ -167,23 +173,39 @@ class LoRaManagerThing(SoPManagerThing):
 
     # override
     def _scan_staff_thing(self, timeout: float = 5) -> List[dict]:
-        pass
+        global newly_discovered_node, node_idx
+        print('debugging1..')
+        print('node', newly_discovered_node)
+    
+        staff_thing_info_list = []
+        for node in newly_discovered_node:            
+            # staff_thing_info = LoRaStaffThingInfo(device_id=node, idx=node_idx,)   
+            staff_thing_info = dict(device_id=node)
+            # self._staff_register_queue.put(staff_thing_info)
+            newly_discovered_node.remove(str(node))
+            staff_thing_info_list.append(dict(idx=node_idx, staff_thing_info=staff_thing_info))
+            node_idx += 1
+        if len(staff_thing_info_list) != 0:
+            print("debugging3",staff_thing_info_list)
+            return staff_thing_info_list
+        
+        return False
 
     ###################################
    
 
     def _create_staff(self, staff_thing_info: dict) -> LoRaStaffThing:
-        
-        idx = staff_thing_info.idx
-        uniqueid = staff_thing_info.device_id
+        print('debugging4')
+        idx = staff_thing_info['idx']
+        staff_thing_info = staff_thing_info['staff_thing_info']
+        uniqueid = staff_thing_info['device_id']
 
         lora_child_thing = LoRaStaffThing(
             name='sensor'+str(idx), service_list=[], alive_cycle=10, idx=idx, device_id=uniqueid)
 
         lora_child_thing.make_service_list()
         lora_child_thing.set_function_result_queue(self._publish_queue)
-        for staff_service in lora_child_thing.get_value_list() + lora_child.get_function_list():
-            staff_service.add_tag(SoPTag(self._conf_select))
+        # for staff_service in lora_child_thing.get_value_list() + lora_child_thing.get_function_list():
+        #     staff_service.add_tag(SoPTag(self._conf_select))
         
-
         return lora_child_thing

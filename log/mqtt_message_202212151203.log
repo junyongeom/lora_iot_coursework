@@ -1,0 +1,46 @@
+[2022-12-15 12:03:58,923]: Skip avahi_enable search...
+[2022-12-15 12:03:58,923]: SSL is not enabled...
+[2022-12-15 12:03:58,925]: [-> CONNECT           ] Connect to Host: 127.0.0.1:11083
+[2022-12-15 12:03:58,926]: Register try 1
+[2022-12-15 12:03:58,926]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:03:58,927]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:03:58,928]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:03:58,929]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 172, in _scan_staff_message_thread_func
+    raise Exception('Scan staff thing error')
+Exception: Scan staff thing error
+
+Error: Scan staff thing error
+[2022-12-15 12:03:58,929]: [TM_REGISTER         ] topic : TM/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "alive_cycle": 60,
+    "functions": [],
+    "is_parallel": true,
+    "is_super": false,
+    "values": []
+}
+[2022-12-15 12:03:58,931]: [MT_RESULT_REGISTER  ] topic : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB payload : {
+    "error": -4,
+    "middleware_name": "SoPIoT-MW-Level1-0_000000000000"
+}
+[2022-12-15 12:03:58,931]: [print_packet] Unexpected topic!!! : MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB 
+[2022-12-15 12:03:58,932]: Wrong payload arrive... lora_manager_thing_D8F3BC801CFB should be arrive, not lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:03:58,933]: Traceback message : Traceback (most recent call last):
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 213, in _receive_message_thread_func
+    self._handle_mqtt_message(recv_msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/big_thing.py", line 286, in _handle_mqtt_message
+    self._handle_MT_RESULT_REGISTER(msg)
+  File "/home/jyeom/anaconda3/envs/py37tf26/lib/python3.7/site-packages/big_thing_py/manager_thing.py", line 261, in _handle_MT_RESULT_REGISTER
+    raise
+RuntimeError: No active exception to reraise
+
+Error: No active exception to reraise
+[2022-12-15 12:04:03,936]: Register try 2
+[2022-12-15 12:04:03,936]: [-> SUBSCRIBE         ] MT/RESULT/REGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:04:03,937]: [-> SUBSCRIBE         ] MT/RESULT/UNREGISTER/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:04:03,937]: [-> SUBSCRIBE         ] MT/RESULT/BINARY_VALUE/lora_manager_thing_D8F3BC801CFB
+[2022-12-15 12:04:08,898]: Ctrl + C Exit
+[2022-12-15 12:04:08,899]: _alive_thread is terminated
+[2022-12-15 12:04:08,899]: _value_publish_thread is terminated
+[2022-12-15 12:04:08,899]: _scan_staff_message_thread is terminated
+[2022-12-15 12:04:08,899]: _receive_staff_message_thread is terminated
+[2022-12-15 12:04:08,899]: _publish_staff_message_thread is terminated
